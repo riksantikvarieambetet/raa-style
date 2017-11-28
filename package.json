@@ -4,6 +4,7 @@
   "description": "Sass-bibliotek för Riksantikvarieämbetet",
   "main": " ",
   "scripts": {
+    "start": "node-sass src --output build",
     "test": "",
     "prepublish": "node-sass typography.scss"
   },
