@@ -4,18 +4,19 @@
   "description": "Sass-bibliotek för Riksantikvarieämbetet",
   "main": " ",
   "scripts": {
-    "test": " "
+    "test": ""
   },
-  "repository": {
-    "type": "git",
-    "url": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse"
-  },
+  "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
   "keywords": [
     "sass",
     "css",
     "raa",
     "style"
   ],
-  "author": "",
-  "license": "MIT"
+  "author": " ",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
+  "private": true
 }
