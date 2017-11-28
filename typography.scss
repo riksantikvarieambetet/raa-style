@@ -12,25 +12,62 @@ body {
 
 // Stora skärmar
 
-@include respond-to(wide-screens) {
+.hero {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.125rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.813rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
+.large-text {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+}
+
+// Mediumstora skärmar
+
+@include respond-to(medium-screens) {
 
     .hero {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 3.75rem;
+        line-height: 3.938rem;
     }
     
     h1 {
-        font-size: 3rem;
-        line-height: 3.125rem;
-    }
-    
-    h2 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         line-height: 2.813rem;
     }
     
+    h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
     h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 1.875rem;
     }
     
@@ -45,8 +82,48 @@ body {
     }
 
     .large-text {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 1.875rem;
+    }
+}
+    
+// Små skärmar
+
+@include respond-to(handhelds) {
+
+    .hero {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.625rem;
+        line-height: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.375rem;
+        line-height: 1.563rem;
+    }
+    
+    h4 {
+        font-size: 1.125rem;
+        line-height: 1.188rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .large-text {
+        font-size: 1.375rem;
+        line-height: 1.563rem;
     }
 }
 

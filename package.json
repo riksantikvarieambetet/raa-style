@@ -1,10 +1,11 @@
 {
   "name": "raa-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sass-bibliotek för Riksantikvarieämbetet",
   "main": " ",
   "scripts": {
-    "test": ""
+    "test": "",
+    "prepublish": "node-sass typography.scss"
   },
   "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
   "keywords": [
@@ -16,7 +17,8 @@
   "author": " ",
   "license": "MIT",
   "dependencies": {
+    "node-sass": "^4.7.2",
     "normalize.css": "^7.0.0"
   },
-  "private": true
+  "private": false
 }
