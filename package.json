@@ -1,12 +1,12 @@
 {
   "name": "raa-style",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Sass-bibliotek för Riksantikvarieämbetet",
   "main": " ",
   "scripts": {
-    "start": "node-sass src --output build",
-    "test": "",
-    "prepublish": "node-sass typography.scss"
+    "start": "node-sass -w src --output build",
+    "build": "node-sass src --output build",
+    "prepublish": "npm run build"
   },
   "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
   "keywords": [
