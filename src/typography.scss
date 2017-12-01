@@ -1,8 +1,10 @@
-@import '~normalize.css/normalize.css';
-@import 'media-queries';
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 
 body {
+    
+    @import '~normalize.css/normalize.css';
+    @import 'media-queries';
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
     font-size: 16px;
     font-weight: normal;
     font-family: 'Source Sans Pro', sans-serif;
