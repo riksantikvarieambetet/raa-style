@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node-sass -w src --output build",
     "build": "node-sass src --output build",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && node list-icons.js"
   },
   "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
   "keywords": [
