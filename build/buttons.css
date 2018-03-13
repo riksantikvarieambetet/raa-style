@@ -58,6 +58,11 @@ button {
     button:disabled:hover {
       background-color: #BABABA;
       border-color: #BABABA;
+    background-color: #D9D9D6;
+    border-color: #D9D9D6; }
+    button:disabled:hover {
+      background-color: #D9D9D6;
+      border-color: #D9D9D6;
       cursor: default;
       color: white; }
   button.std-width {
@@ -79,6 +84,7 @@ button {
   background-color: white;
   border-color: #C94A18;
   color: #6A6A6A;
+  color: #707372;
   border: 2px solid #C94A18; }
   .button-border:hover {
     background-color: #C94A18;
@@ -95,3 +101,5 @@ button {
   border-color: #6A6A6A; }
   .button-cancel:hover {
     background-color: #5d5d5d; }
+  .button-cancel:hover {
+    background-color: #636665; }
