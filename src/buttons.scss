@@ -1,73 +1,90 @@
 @import 'colors';
+@import 'media-queries';
 
-@mixin colored-button($color) {
-    background-color: $color;
-    border-color: $color;
+@mixin colored-button($main, $hover, $active) {
+    background-color: $main;
     &:hover {
-        background-color: darken( $color, 5%);
+        background-color: $hover;
+    }
+    &:active {
+        background-color: $active;
+    }
+    &:disabled {
+        cursor: default;
+        background-color: $raa-gray-2;
+        color: $raa-gray-4;
+    }
+}
+
+@mixin button-secondary() {
+    border: $raa-orange 2px solid;
+    padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
+    background-color: white;
+    color: $raa-orange;
+    &:hover {
+        color: #B54216;
+        background-color: white;
+    }
+    &:active {
+        color: #A33B14;
+        background-color: white;
     }
 }
 
 button {
-    @include colored-button($raa-orange);
-    text-transform: uppercase;
-    display: block;
-    font-size: 1.25rem;
-    color: #fff;
-    margin: 0;
-    padding: .4rem 1.4rem;
-    border: solid 1px $raa-orange;
-    border-radius: 2px;
-    font-size: 14px;
+    @include colored-button($raa-orange, #B54216, #A33B14);
+
+    cursor: pointer;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 800;
-    &:hover {
-        cursor: pointer;
-    }
-    &:disabled {
-        background-color: $raa-gray-3;
-        border-color: $raa-gray-3;
-        &:hover {
-            background-color: $raa-gray-3;
-            border-color: $raa-gray-3;
-            cursor: default;
-            color: white;
-        }
-    }
-    &.std-width {
-        min-width: 10rem;
-    }
+    transition: all .4s;
+  
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600 ;
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 2px;
+    min-width: 9rem;
+}
+
+button.button-secondary {
+    @include button-secondary();
 }
 
 .button-icon {
-    background-color: white;
-    border-color: white;
-    color: $raa-orange;
-    min-width: auto;
-    padding: .2rem 0.45rem;
-    font-size: 1.5rem;
-    &:hover {
-        border-color: $raa-orange;
-        background-color: $raa-orange;
-        color: white;
-    }
-}
 
-.button-border {
-    background-color: white;
-    border-color: $raa-orange;
-    color: $raa-gray-4;
-    border: 2px solid $raa-orange;
-    &:hover {
-        background-color: $raa-orange;
-        color: white;
-    }
 }
 
 .button-confirm {
-    @include colored-button($raa-green);
+    @include colored-button($raa-green, #B54216, #A33B14);
 }
 
 .button-cancel {
-    @include colored-button($raa-gray-4);
+    @include colored-button($raa-gray-4, #B54216, #A33B14);
+}
+
+.button-group {
+
+    margin-top: 1rem;
+   
+    button:not(:last-child) {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &.button-secondary {
+        button {
+            @include button-secondary();
+        }
+    }
+
+    @include respond-to(handhelds){
+        display: flex;
+        flex-direction: column;
+        
+        button:not(:last-child) {
+            margin-right: 0;
+        }
+    }
 }

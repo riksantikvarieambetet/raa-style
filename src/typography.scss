@@ -1,11 +1,12 @@
 @import 'media-queries';
+@import 'colors';
 @import '../node_modules/normalize-scss/sass/_normalize';
 
 @include normalize();
 
 body {
 
-    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 
     font-size: 16px;
     font-weight: normal;
@@ -53,6 +54,29 @@ p {
 .large-text {
     font-size: 1.75rem;
     line-height: 1.875rem;
+}
+
+.small-text {
+    font-size: 0.813rem;
+    line-height: 1rem;
+}
+
+a {
+    transition: all .4s;
+    color: $raa-orange;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        color: #B54216;
+        text-decoration-color: #B54216;
+    }
+
+    &:active {
+        color: #A33B14;
+        text-decoration-color: #B54216
+    }
 }
 
 // Mediumstora skärmar
