@@ -7,7 +7,7 @@ let iconSummary = selection.icons.map((icon) => {
     return icon.properties;
 });
 
-fs.writeFile("./build/icondata.json", JSON.stringify(iconSummary), function(err) {
+fs.writeFile("./dist/icondata.json", JSON.stringify(iconSummary), function(err) {
     if(err) {
         return console.log(err);
     }

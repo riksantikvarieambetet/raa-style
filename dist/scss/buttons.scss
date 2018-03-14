@@ -1,0 +1,90 @@
+@import 'colors';
+@import 'media-queries';
+
+@mixin colored-button($main, $hover, $active) {
+    background-color: $main;
+    &:hover {
+        background-color: $hover;
+    }
+    &:active {
+        background-color: $active;
+    }
+    &:disabled {
+        cursor: default;
+        background-color: $raa-gray-2;
+        color: $raa-gray-4;
+    }
+}
+
+@mixin button-secondary() {
+    border: $raa-orange 2px solid;
+    padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
+    background-color: white;
+    color: $raa-orange;
+    &:hover {
+        color: #B54216;
+        background-color: white;
+    }
+    &:active {
+        color: #A33B14;
+        background-color: white;
+    }
+}
+
+button {
+    @include colored-button($raa-orange, #B54216, #A33B14);
+
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all .4s;
+  
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600 ;
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 2px;
+    min-width: 9rem;
+}
+
+button.button-secondary {
+    @include button-secondary();
+}
+
+.button-icon {
+
+}
+
+.button-confirm {
+    @include colored-button($raa-green, #B54216, #A33B14);
+}
+
+.button-cancel {
+    @include colored-button($raa-gray-4, #B54216, #A33B14);
+}
+
+.button-group {
+
+    margin-top: 1rem;
+   
+    button:not(:last-child) {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &.button-secondary {
+        button {
+            @include button-secondary();
+        }
+    }
+
+    @include respond-to(handhelds){
+        display: flex;
+        flex-direction: column;
+        
+        button:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+}

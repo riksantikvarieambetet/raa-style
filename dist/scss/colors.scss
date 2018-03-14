@@ -1,0 +1,63 @@
+////////////////
+// RAÄ colors //
+////////////////
+
+$raa-orange: #C94A18;
+
+$raa-white: #FFF;
+
+$raa-gray-1: #FBFBFB;
+$raa-gray-2: #DADADA;
+$raa-gray-3: #BABABA;
+$raa-gray-4: #6A6A6A;
+$raa-gray-5: #3A3A3A;
+
+$raa-blue: #00567E;
+$raa-green: #008578;
+$raa-error-red: #DB0000;
+$raa-error-red-light: #FCEBEB;
+
+.raa-color-orange {
+    color: $raa-orange;
+}
+
+.raa-color-white {
+    color: $raa-white;
+}
+
+.raa-color-gray-4 {
+    color: $raa-gray-4;
+}
+
+.raa-color-gray-5 {
+    color: $raa-gray-5;
+}
+
+.raa-color-red {
+    color: $raa-error-red;
+}
+
+.raa-bg-color-orange {
+    background-color: $raa-orange;
+}
+
+.raa-bg-color-white {
+    background-color: $raa-white;
+}
+
+.raa-bg-color-gray-1 {
+    background-color: $raa-gray-1;
+}
+.raa-bg-color-gray-2 {
+    background-color: $raa-gray-2;
+}
+.raa-bg-color-gray-3 {
+    background-color: $raa-gray-3;
+}
+.raa-bg-color-gray-4 {
+    background-color: $raa-gray-4;
+}
+
+.raa-bg-color-red-light {
+    background-color: $raa-error-red-light;
+}
