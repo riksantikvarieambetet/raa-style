@@ -1,6 +1,11 @@
+/////////////
+// Buttons //
+/////////////
+
 @import 'colors';
 @import 'media-queries';
 
+// Mixin för att skapa generellt färg-beteende
 @mixin colored-button($main, $hover, $active) {
     background-color: $main;
     &:hover {
@@ -16,6 +21,7 @@
     }
 }
 
+// Mixin för border-knapp
 @mixin button-secondary() {
     border: $raa-orange 2px solid;
     padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
@@ -31,6 +37,7 @@
     }
 }
 
+// Standard-stil för knappar
 button {
     @include colored-button($raa-orange, #B54216, #A33B14);
 

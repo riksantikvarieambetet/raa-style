@@ -1,11 +1,15 @@
+////////////////
+// Typography //
+////////////////
+
 @import 'media-queries';
 @import 'colors';
 @import '../node_modules/normalize-scss/sass/_normalize';
 
+// Import av normaliserings-css
 @include normalize();
 
 body {
-
     @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 
     font-size: 16px;
@@ -158,4 +162,3 @@ a {
         line-height: 1.563rem;
     }
 }
-
