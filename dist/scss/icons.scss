@@ -33,6 +33,39 @@
 
 
 
+.icon-bem3:before {
+  content: "\e93e";
+}
+.icon-fornlamning:before {
+  content: "\e940";
+}
+.icon-hourglass:before {
+  content: "\e941";
+}
+.icon-okl:before {
+  content: "\e942";
+}
+.icon-info:before {
+  content: "\e938";
+}
+.icon-error:before {
+  content: "\e939";
+}
+.icon-draw-polygon:before {
+  content: "\e93a";
+}
+.icon-layers:before {
+  content: "\e93b";
+}
+.icon-map:before {
+  content: "\e93c";
+}
+.icon-measure:before {
+  content: "\e93d";
+}
+.icon-terrain:before {
+  content: "\e93f";
+}
 .icon-facebook:before {
   content: "\e900";
 }
@@ -200,10 +233,4 @@
 }
 .icon-visibility-on:before {
   content: "\e937";
-}
-.icon-bookmark-selected:before {
-  content: "\e";
-}
-.icon-bookmark-unselected:before {
-  content: "\e";
 }
