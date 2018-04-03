@@ -4,6 +4,35 @@
     {
       "icon": {
         "paths": [
+          "M256 85.333v256h0.427l-0.427 0.427 170.667 170.24-170.667 170.667 0.427 0.427h-0.427v255.573h512v-255.573h-0.427l0.427-0.427-170.667-170.667 170.667-170.24-0.427-0.427h0.427v-256h-512zM682.667 704v149.333h-341.333v-149.333l170.667-170.667 170.667 170.667zM512 490.667l-170.667-170.667v-149.333h341.333v149.333l-170.667 170.667z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "hourglass"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 335,
+        "id": 67,
+        "name": "hourglass",
+        "prevSize": 32,
+        "code": 59710
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M85.333 512l426.667-426.667 426.667 426.667-426.667 426.667-426.667-426.667zM512 204.8l-307.2 307.2 307.2 307.2 307.2-307.2-307.2-307.2z"
         ],
         "attrs": [
@@ -13,22 +42,22 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "bem3"
+          "ej-lamning"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 329,
-        "id": 67,
-        "name": "bem3",
+        "order": 334,
+        "id": 66,
+        "name": "ej-lamning",
         "prevSize": 32,
-        "code": 59710
+        "code": 59712
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 0
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -49,38 +78,9 @@
         {}
       ],
       "properties": {
-        "order": 328,
-        "id": 66,
-        "name": "fornlamning",
-        "prevSize": 32,
-        "code": 59712
-      },
-      "setIdx": 0,
-      "setId": 2,
-      "iconIdx": 1
-    },
-    {
-      "icon": {
-        "paths": [
-          "M256 85.333v256h0.427l-0.427 0.427 170.667 170.24-170.667 170.667 0.427 0.427h-0.427v255.573h512v-255.573h-0.427l0.427-0.427-170.667-170.667 170.667-170.24-0.427-0.427h0.427v-256h-512zM682.667 704v149.333h-341.333v-149.333l170.667-170.667 170.667 170.667zM512 490.667l-170.667-170.667v-149.333h341.333v149.333l-170.667 170.667z"
-        ],
-        "attrs": [
-          {}
-        ],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "grid": 0,
-        "tags": [
-          "hourglass"
-        ]
-      },
-      "attrs": [
-        {}
-      ],
-      "properties": {
-        "order": 327,
+        "order": 333,
         "id": 65,
-        "name": "hourglass",
+        "name": "fornlamning",
         "prevSize": 32,
         "code": 59713
       },
@@ -100,16 +100,16 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "okl"
+          "ovr-lamning"
         ]
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 326,
+        "order": 332,
         "id": 64,
-        "name": "okl",
+        "name": "ovr-lamning",
         "prevSize": 32,
         "code": 59714
       },
@@ -1021,7 +1021,7 @@
         {}
       ],
       "properties": {
-        "order": 280,
+        "order": 331,
         "id": 32,
         "name": "place",
         "prevSize": 32,
@@ -1984,8 +1984,8 @@
       "embed": false,
       "showSelector": true,
       "showMetrics": true,
-      "showMetadata": false,
-      "showVersion": false,
+      "showMetadata": true,
+      "showVersion": true,
       "resetPoint": 59648,
       "autoHost": true,
       "includeMetadata": false,

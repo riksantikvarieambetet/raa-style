@@ -12,27 +12,55 @@
     font-weight: normal;
     font-style: normal;
 }
-  
+
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'raa-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: bottom;
-    display: inline-block;
-    margin-bottom: 1px;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'raa-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-
-
+.icon-hourglass:before {
+  content: "\e93e";
+}
+.icon-ej-lamning:before {
+  content: "\e940";
+}
+.icon-fornlamning:before {
+  content: "\e941";
+}
+.icon-ovr-lamning:before {
+  content: "\e942";
+}
+.icon-info:before {
+  content: "\e938";
+}
+.icon-error:before {
+  content: "\e939";
+}
+.icon-draw-polygon:before {
+  content: "\e93a";
+}
+.icon-layers:before {
+  content: "\e93b";
+}
+.icon-map:before {
+  content: "\e93c";
+}
+.icon-measure:before {
+  content: "\e93d";
+}
+.icon-terrain:before {
+  content: "\e93f";
+}
 .icon-facebook:before {
   content: "\e900";
 }
@@ -200,10 +228,4 @@
 }
 .icon-visibility-on:before {
   content: "\e937";
-}
-.icon-bookmark-selected:before {
-  content: "\e";
-}
-.icon-bookmark-unselected:before {
-  content: "\e";
 }

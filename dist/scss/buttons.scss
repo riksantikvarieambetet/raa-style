@@ -64,14 +64,14 @@ button.button-secondary {
 }
 
 .button-confirm {
-    @include colored-button($raa-green, #B54216, #A33B14);
+    @include colored-button($raa-green, #00786C, #006C61);
 }
 
 .button-cancel {
-    @include colored-button($raa-gray-4, #B54216, #A33B14);
+    @include colored-button($raa-gray-4, #626665, #565A59);
 }
 
-.button-group {
+.button-group, .button-tabs {
 
     margin-top: 1rem;
    
@@ -92,6 +92,34 @@ button.button-secondary {
         
         button:not(:last-child) {
             margin-right: 0;
+        }
+    }
+}
+
+.button-tabs {
+    display: flex;
+    button {
+        @include button-secondary();
+    }    
+    button:not(:last-child) {
+        margin: 0;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    button:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    button.active, button:active {
+        color: $raa-white;
+        background-color: #A33B14;
+        border-color: #A33B14;
+
+        + button {
+            border-left-color: #A33B14;
         }
     }
 }

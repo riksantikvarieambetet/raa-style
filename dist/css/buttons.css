@@ -47,9 +47,9 @@ button.button-secondary {
 .button-confirm {
   background-color: #008578; }
   .button-confirm:hover {
-    background-color: #B54216; }
+    background-color: #00786C; }
   .button-confirm:active {
-    background-color: #A33B14; }
+    background-color: #006C61; }
   .button-confirm:disabled {
     cursor: default;
     background-color: #DADADA;
@@ -58,33 +58,61 @@ button.button-secondary {
 .button-cancel {
   background-color: #6A6A6A; }
   .button-cancel:hover {
-    background-color: #B54216; }
+    background-color: #626665; }
   .button-cancel:active {
-    background-color: #A33B14; }
+    background-color: #565A59; }
   .button-cancel:disabled {
     cursor: default;
     background-color: #DADADA;
     color: #6A6A6A; }
 
-.button-group {
+.button-group, .button-tabs {
   margin-top: 1rem; }
-  .button-group button:not(:last-child) {
+  .button-group button:not(:last-child), .button-tabs button:not(:last-child) {
     margin-right: 1rem;
     margin-bottom: 1rem; }
-  .button-group.button-secondary button {
+  .button-group.button-secondary button, .button-tabs.button-secondary button {
     border: #C94A18 2px solid;
     padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
     background-color: white;
     color: #C94A18; }
-    .button-group.button-secondary button:hover {
+    .button-group.button-secondary button:hover, .button-tabs.button-secondary button:hover {
       color: #B54216;
       background-color: white; }
-    .button-group.button-secondary button:active {
+    .button-group.button-secondary button:active, .button-tabs.button-secondary button:active {
       color: #A33B14;
       background-color: white; }
   @media only screen and (max-width: 520px) {
-    .button-group {
+    .button-group, .button-tabs {
       display: flex;
       flex-direction: column; }
-      .button-group button:not(:last-child) {
+      .button-group button:not(:last-child), .button-tabs button:not(:last-child) {
         margin-right: 0; } }
+
+.button-tabs {
+  display: flex; }
+  .button-tabs button {
+    border: #C94A18 2px solid;
+    padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
+    background-color: white;
+    color: #C94A18; }
+    .button-tabs button:hover {
+      color: #B54216;
+      background-color: white; }
+    .button-tabs button:active {
+      color: #A33B14;
+      background-color: white; }
+  .button-tabs button:not(:last-child) {
+    margin: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .button-tabs button:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .button-tabs button.active, .button-tabs button:active {
+    color: #FFF;
+    background-color: #A33B14;
+    border-color: #A33B14; }
+    .button-tabs button.active + button, .button-tabs button:active + button {
+      border-left-color: #A33B14; }
