@@ -5,8 +5,9 @@
   "main": "",
   "scripts": {
     "start": "node-sass -w src --output dist/css",
+    "clean": "rm -Rf dist",
     "build": "node-sass src --output dist/css",
-    "prepublish": "npm run build && node list-icons.js && cp src/* dist/scss"
+    "prepublish": "npm run clean && npm run build && node list-icons.js && mkdirp dist/scss && cp src/* dist/scss && cp -R assets dist/"
   },
   "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
   "keywords": [
@@ -18,8 +19,11 @@
   "author": "Riksantikvarieämbetet",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.7.2",
     "normalize-scss": "^7.0.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2"
   },
   "private": false
 }
