@@ -4,10 +4,14 @@
   "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo fins på http://styleguide.raa.se/.",
   "main": "",
   "scripts": {
-    "start": "node-sass -w src --output dist/css",
+    "start": "npm run build && node-sass -w src --output dist/css",
     "clean": "rm -Rf dist",
-    "build": "node-sass src --output dist/css",
-    "prepublish": "npm run clean && npm run build && node list-icons.js && mkdirp dist/scss && cp src/* dist/scss && cp -R assets dist/"
+    "build": "npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-assets",
+    "build:css": "node-sass src --output dist/css",
+    "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
+    "build:list-icons": "node list-icons.js",
+    "build:copy-assets": "cp -R assets dist/",
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
   "keywords": [
