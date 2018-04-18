@@ -53,6 +53,11 @@ button {
     border: none;
     border-radius: 2px;
     min-width: 9rem;
+
+    @include respond-to(handhelds){
+        width: 100%;
+        display: block;
+    }
 }
 
 button.button-secondary {
@@ -120,6 +125,21 @@ button.button-secondary {
 
         + button {
             border-left-color: #A33B14;
+        }
+    }
+
+    @include respond-to(handhelds){
+        button:not(:last-child) {
+            margin: 0;
+            border-bottom: none;
+            border-right: 2px solid $raa-orange;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    
+        button:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
     }
 }
