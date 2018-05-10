@@ -49,10 +49,11 @@ button {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600 ;
-    padding: 0.75rem 2.5rem;
+    padding: 0.75rem 1rem;
     border: none;
     border-radius: 2px;
-    min-width: 9rem;
+    min-width: 8rem;
+    letter-spacing: 0.2px;
 
     @include respond-to(handhelds){
         width: 100%;
