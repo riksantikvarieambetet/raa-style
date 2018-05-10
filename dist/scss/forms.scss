@@ -1,20 +1,82 @@
 @import 'colors';
 
 label {
-    font-weight: 600;
-    margin: 0.25rem 0;
-    display: inline-block;
-  }
-  
-  input[type="text"], input[type="email"], input[type="phone"],  textarea {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid $raa-gray-3;
-    border-radius: 2px;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  display: flex;
 
-    &.ng-invalid ng-dirty {
-      background-color: $raa-error-red;
-    }
+  &.select {
+    font-weight: 400;
+    font-size: 0.813rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
   }
+}
+
+p.error-message {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  color: $raa-error-red;
+}
+
+input[type="text"], input[type="email"], input[type="phone"],  textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid $raa-gray-3;
+  border-radius: 2px;
+
+  &.ng-invalid.ng-dirty {
+    background-color: $raa-error-red-light;
+  }
+}
+
+[id^=raa-checkbox] {
+  display: none!important;
+}
+
+[for^=raa-checkbox]:before {
+  font-family: 'Source Sans Pro', "raa-icons";
+  content: '\e949';
+  position: relative;
+  margin-right: .5rem;
+  height: 1.25rem;
+  background: white;
+  font-size: 1.25rem;
+  color: $raa-gray-5;
+}
+
+[type=checkbox]:checked + [for^=raa-checkbox]:before {
+  background: white;
+  font-family: 'Source Sans Pro', "raa-icons";
+  content: '\e941';
+  transition: all .2s;
+  font-size: 1.25rem;
+  color: $raa-green;
+}
+
+[id^=raa-radiobutton] {
+  display: none!important;
+}
+
+[for^=raa-radiobutton]:before {
+  font-family: 'Source Sans Pro', "raa-icons";
+  content: '\e941';
+  position: relative;
+  margin-right: .5rem;
+  height: 1.25rem;
+  background: white;
+  font-size: 1.25rem;
+  color: $raa-gray-5;
+}
+
+[type=radio]:checked + [for^=raa-radiobutton]:before {
+  background: white;
+  font-family: 'Source Sans Pro', "raa-icons";
+  content: '\e940';
+  transition: all .2s;
+  font-size: 1.25rem;
+  // color: $raa-green;
+}
