@@ -3,7 +3,7 @@
 label {
   font-weight: 600;
   margin: 0.25rem 0;
-  display: inline-block;
+  display: flex;
 
   &.select {
     font-weight: 400;
@@ -51,8 +51,32 @@ input[type="text"], input[type="email"], input[type="phone"],  textarea {
 [type=checkbox]:checked + [for^=raa-checkbox]:before {
   background: white;
   font-family: 'Source Sans Pro', "raa-icons";
-  content: '\e948';
+  content: '\e941';
   transition: all .2s;
   font-size: 1.25rem;
   color: $raa-green;
+}
+
+[id^=raa-radiobutton] {
+  display: none!important;
+}
+
+[for^=raa-radiobutton]:before {
+  font-family: 'Source Sans Pro', "raa-icons";
+  content: '\e941';
+  position: relative;
+  margin-right: .5rem;
+  height: 1.25rem;
+  background: white;
+  font-size: 1.25rem;
+  color: $raa-gray-5;
+}
+
+[type=radio]:checked + [for^=raa-radiobutton]:before {
+  background: white;
+  font-family: 'Source Sans Pro', "raa-icons";
+  content: '\e940';
+  transition: all .2s;
+  font-size: 1.25rem;
+  // color: $raa-green;
 }
