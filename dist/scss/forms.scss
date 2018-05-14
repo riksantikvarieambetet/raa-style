@@ -51,7 +51,7 @@ input[type="text"], input[type="email"], input[type="phone"],  textarea {
 [type=checkbox]:checked + [for^=raa-checkbox]:before {
   background: white;
   font-family: 'Source Sans Pro', "raa-icons";
-  content: '\e941';
+  content: '\e948';
   transition: all .2s;
   font-size: 1.25rem;
   color: $raa-green;
