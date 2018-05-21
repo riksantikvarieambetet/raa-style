@@ -1,0 +1,25 @@
+@import 'media-queries';
+
+.panel {
+    padding: 2rem;
+    @include respond-to(handhelds){
+        padding: 1rem;
+    }
+}
+
+.panel-container {  
+    padding: 1rem;
+    .panel:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.panel-container-flex {  
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    .panel {
+        margin: .5rem;
+        flex: 1 1 0;
+    }
+}
