@@ -16,8 +16,10 @@
     }
     &:disabled {
         cursor: default;
-        background-color: $raa-gray-2;
-        color: $raa-gray-4;
+        opacity: .5;
+        &:hover {
+            background-color: $main;
+        }
     }
 }
 
@@ -28,10 +30,12 @@
     background-color: white;
     color: $raa-orange;
     &:hover {
+        border-color: #B54216;
         color: #B54216;
         background-color: white;
     }
     &:active {
+        border-color: #A33B14;
         color: #A33B14;
         background-color: white;
     }
