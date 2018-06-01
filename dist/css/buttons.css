@@ -30,8 +30,9 @@ button {
     background-color: #A33B14; }
   button:disabled {
     cursor: default;
-    background-color: #DADADA;
-    color: #6A6A6A; }
+    opacity: .5; }
+    button:disabled:hover {
+      background-color: #C94A18; }
   @media only screen and (max-width: 520px) {
     button {
       width: 100%;
@@ -43,9 +44,11 @@ button.button-secondary {
   background-color: white;
   color: #C94A18; }
   button.button-secondary:hover {
+    border-color: #B54216;
     color: #B54216;
     background-color: white; }
   button.button-secondary:active {
+    border-color: #A33B14;
     color: #A33B14;
     background-color: white; }
 
@@ -57,8 +60,9 @@ button.button-secondary {
     background-color: #006C61; }
   .button-confirm:disabled {
     cursor: default;
-    background-color: #DADADA;
-    color: #6A6A6A; }
+    opacity: .5; }
+    .button-confirm:disabled:hover {
+      background-color: #008578; }
 
 .button-cancel {
   background-color: #6A6A6A; }
@@ -68,8 +72,9 @@ button.button-secondary {
     background-color: #565A59; }
   .button-cancel:disabled {
     cursor: default;
-    background-color: #DADADA;
-    color: #6A6A6A; }
+    opacity: .5; }
+    .button-cancel:disabled:hover {
+      background-color: #6A6A6A; }
 
 .button-group, .button-tabs {
   margin-top: 1rem; }
@@ -82,9 +87,11 @@ button.button-secondary {
     background-color: white;
     color: #C94A18; }
     .button-group.button-secondary button:hover, .button-tabs.button-secondary button:hover {
+      border-color: #B54216;
       color: #B54216;
       background-color: white; }
     .button-group.button-secondary button:active, .button-tabs.button-secondary button:active {
+      border-color: #A33B14;
       color: #A33B14;
       background-color: white; }
   @media only screen and (max-width: 520px) {
@@ -102,9 +109,11 @@ button.button-secondary {
     background-color: white;
     color: #C94A18; }
     .button-tabs button:hover {
+      border-color: #B54216;
       color: #B54216;
       background-color: white; }
     .button-tabs button:active {
+      border-color: #A33B14;
       color: #A33B14;
       background-color: white; }
   .button-tabs button:not(:last-child) {

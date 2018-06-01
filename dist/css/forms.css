@@ -14,14 +14,15 @@ p.error-message {
   margin-bottom: 1rem;
   color: #DB0000; }
 
-input[type="text"], input[type="email"], input[type="phone"], textarea {
+input[type="text"], input[type="email"], input[type="phone"], textarea, select {
   box-sizing: border-box;
   display: block;
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #BABABA;
-  border-radius: 2px; }
-  input[type="text"].ng-invalid.ng-dirty, input[type="email"].ng-invalid.ng-dirty, input[type="phone"].ng-invalid.ng-dirty, textarea.ng-invalid.ng-dirty {
+  border-radius: 2px;
+  background-color: white; }
+  input[type="text"].ng-invalid.ng-dirty, input[type="email"].ng-invalid.ng-dirty, input[type="phone"].ng-invalid.ng-dirty, textarea.ng-invalid.ng-dirty, select.ng-invalid.ng-dirty {
     background-color: #FCEBEB; }
 
 [id^=raa-checkbox] {

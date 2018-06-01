@@ -20,13 +20,14 @@ p.error-message {
   color: $raa-error-red;
 }
 
-input[type="text"], input[type="email"], input[type="phone"],  textarea {
+input[type="text"], input[type="email"], input[type="phone"], textarea, select {
   box-sizing: border-box;
   display: block;
   width: 100%;
   padding: 0.75rem;
   border: 1px solid $raa-gray-3;
   border-radius: 2px;
+  background-color: white;
 
   &.ng-invalid.ng-dirty {
     background-color: $raa-error-red-light;
