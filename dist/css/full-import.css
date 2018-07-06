@@ -41,7 +41,7 @@ button {
 
 button.button-secondary {
   border: #C94A18 2px solid;
-  padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
+  padding: calc(0.75rem - 2px) calc(1rem - 2px);
   background-color: white;
   color: #C94A18; }
   button.button-secondary:hover {
@@ -84,7 +84,7 @@ button.button-secondary {
     margin-bottom: 1rem; }
   .button-group.button-secondary button, .button-tabs.button-secondary button {
     border: #C94A18 2px solid;
-    padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
+    padding: calc(0.75rem - 2px) calc(1rem - 2px);
     background-color: white;
     color: #C94A18; }
     .button-group.button-secondary button:hover, .button-tabs.button-secondary button:hover {
@@ -106,7 +106,7 @@ button.button-secondary {
   display: flex; }
   .button-tabs button {
     border: #C94A18 2px solid;
-    padding: calc(0.75rem - 2px) calc(2.5rem - 2px);
+    padding: calc(0.75rem - 2px) calc(1rem - 2px);
     background-color: white;
     color: #C94A18; }
     .button-tabs button:hover {
@@ -125,11 +125,17 @@ button.button-secondary {
   .button-tabs button:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
-  .button-tabs button.active, .button-tabs button:active {
+  .button-tabs button.active {
+    color: #FFF;
+    background-color: #C94A18;
+    border-color: #C94A18; }
+    .button-tabs button.active + button {
+      border-left-color: #C94A18; }
+  .button-tabs button:active {
     color: #FFF;
     background-color: #A33B14;
     border-color: #A33B14; }
-    .button-tabs button.active + button, .button-tabs button:active + button {
+    .button-tabs button:active + button {
       border-left-color: #A33B14; }
   @media only screen and (max-width: 520px) {
     .button-tabs button:not(:last-child) {
