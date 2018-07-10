@@ -7,154 +7,154 @@
 
 // Mixin för att skapa generellt färg-beteende
 @mixin colored-button($main, $hover, $active) {
-    background-color: $main;
+  background-color: $main;
+  &:hover {
+    background-color: $hover;
+  }
+  &:active {
+    background-color: $active;
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
     &:hover {
-        background-color: $hover;
+      background-color: $main;
     }
-    &:active {
-        background-color: $active;
-    }
-    &:disabled {
-        cursor: default;
-        opacity: .5;
-        &:hover {
-            background-color: $main;
-        }
-    }
+  }
 }
 
 // Mixin för border-knapp
 @mixin button-secondary() {
-    border: $raa-orange 2px solid;
-    padding: calc(0.75rem - 2px) calc(1rem - 2px);
+  border: $raa-orange 2px solid;
+  padding: calc(0.75rem - 2px) calc(1rem - 2px);
+  background-color: white;
+  color: $raa-orange;
+  &:hover {
+    border-color: #b54216;
+    color: #b54216;
     background-color: white;
-    color: $raa-orange;
-    &:hover {
-        border-color: #B54216;
-        color: #B54216;
-        background-color: white;
-    }
-    &:active {
-        border-color: #A33B14;
-        color: #A33B14;
-        background-color: white;
-    }
+  }
+  &:active {
+    border-color: #a33b14;
+    color: #a33b14;
+    background-color: white;
+  }
 }
 
 // Standard-stil för knappar
 button {
-    @include colored-button($raa-orange, #B54216, #A33B14);
+  @include colored-button($raa-orange, #b54216, #a33b14);
 
-    cursor: pointer;
-    font-family: 'Source Sans Pro', sans-serif;
-    transition: all .4s;
-  
-    color: white;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600 ;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 2px;
-    min-width: 8rem;
-    letter-spacing: 0.2px;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.4s;
 
-    @include respond-to(handhelds){
-        width: 100%;
-        display: block;
-    }
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 2px;
+  min-width: 8rem;
+  letter-spacing: 0.2px;
+
+  @include respond-to(handhelds) {
+    width: 100%;
+    display: block;
+  }
 }
 
 button.button-secondary {
-    @include button-secondary();
+  @include button-secondary();
 }
 
 .button-icon {
-    // Ska vi ha detta?
+  // Ska vi ha detta?
 }
 
 .button-confirm {
-    @include colored-button($raa-green, #00786C, #006C61);
+  @include colored-button($raa-green, #00786c, #006c61);
 }
 
 .button-cancel {
-    @include colored-button($raa-gray-4, #626665, #565A59);
+  @include colored-button($raa-gray-4, #626665, #565a59);
 }
 
-.button-group, .button-tabs {
+.button-group,
+.button-tabs {
+  margin-top: 1rem;
 
-    margin-top: 1rem;
-   
+  button:not(:last-child) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &.button-secondary {
+    button {
+      @include button-secondary();
+    }
+  }
+
+  @include respond-to(handhelds) {
+    display: flex;
+    flex-direction: column;
+
     button:not(:last-child) {
-        margin-right: 1rem;
-        margin-bottom: 1rem;
+      margin-right: 0;
     }
-
-    &.button-secondary {
-        button {
-            @include button-secondary();
-        }
-    }
-
-    @include respond-to(handhelds){
-        display: flex;
-        flex-direction: column;
-        
-        button:not(:last-child) {
-            margin-right: 0;
-        }
-    }
+  }
 }
 
 .button-tabs {
-    display: flex;
-    button {
-        @include button-secondary();
-    }    
+  display: flex;
+  button {
+    @include button-secondary();
+  }
+  button:not(:last-child) {
+    margin: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  button:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  button.active {
+    color: $raa-white;
+    background-color: $raa-orange;
+    border-color: $raa-orange;
+
+    + button {
+      border-left-color: $raa-orange;
+    }
+  }
+
+  button:active {
+    color: $raa-white;
+    background-color: #a33b14;
+    border-color: #a33b14;
+
+    + button {
+      border-left-color: #a33b14;
+    }
+  }
+
+  @include respond-to(handhelds) {
     button:not(:last-child) {
-        margin: 0;
-        border-right: none;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+      margin: 0;
+      border-bottom: none;
+      border-right: 2px solid $raa-orange;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     button:not(:first-child) {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
-
-    button.active {
-        color: $raa-white;
-        background-color: $raa-orange;
-        border-color: $raa-orange;
-
-        + button {
-            border-left-color: $raa-orange;
-        }
-    }
-
-    button:active {
-        color: $raa-white;
-        background-color: #A33B14;
-        border-color: #A33B14;
-
-        + button {
-            border-left-color: #A33B14;
-        }
-    }
-
-    @include respond-to(handhelds){
-        button:not(:last-child) {
-            margin: 0;
-            border-bottom: none;
-            border-right: 2px solid $raa-orange;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-    
-        button:not(:first-child) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-    }
+  }
 }
