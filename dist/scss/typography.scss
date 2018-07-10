@@ -10,7 +10,8 @@
 @include normalize();
 
 body {
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300, 400, 600);
+  /* prettier-ignore */
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 
   font-size: 16px;
   font-weight: normal;

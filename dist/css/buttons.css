@@ -1,20 +1,26 @@
 @media only screen and (max-width: 520px) {
   .hide-when-handhelds {
-    display: none; } }
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 521px) and (max-width: 1023px) {
   .hide-when-medium-screens {
-    display: none; } }
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .hide-when-wide-screens {
-    display: none; } }
+    display: none;
+  }
+}
 
 button {
-  background-color: #C94A18;
+  background-color: #c94a18;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
-  transition: all .4s;
+  transition: all 0.4s;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
@@ -23,126 +29,174 @@ button {
   border: none;
   border-radius: 2px;
   min-width: 8rem;
-  letter-spacing: 0.2px; }
-  button:hover {
-    background-color: #B54216; }
-  button:active {
-    background-color: #A33B14; }
-  button:disabled {
-    cursor: default;
-    opacity: .5; }
-    button:disabled:hover {
-      background-color: #C94A18; }
-  @media only screen and (max-width: 520px) {
-    button {
-      width: 100%;
-      display: block; } }
+  letter-spacing: 0.2px;
+}
+button:hover {
+  background-color: #b54216;
+}
+button:active {
+  background-color: #a33b14;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+button:disabled:hover {
+  background-color: #c94a18;
+}
+@media only screen and (max-width: 520px) {
+  button {
+    width: 100%;
+    display: block;
+  }
+}
 
 button.button-secondary {
-  border: #C94A18 2px solid;
+  border: #c94a18 2px solid;
   padding: calc(0.75rem - 2px) calc(1rem - 2px);
   background-color: white;
-  color: #C94A18; }
-  button.button-secondary:hover {
-    border-color: #B54216;
-    color: #B54216;
-    background-color: white; }
-  button.button-secondary:active {
-    border-color: #A33B14;
-    color: #A33B14;
-    background-color: white; }
+  color: #c94a18;
+}
+button.button-secondary:hover {
+  border-color: #b54216;
+  color: #b54216;
+  background-color: white;
+}
+button.button-secondary:active {
+  border-color: #a33b14;
+  color: #a33b14;
+  background-color: white;
+}
 
 .button-confirm {
-  background-color: #008578; }
-  .button-confirm:hover {
-    background-color: #00786C; }
-  .button-confirm:active {
-    background-color: #006C61; }
-  .button-confirm:disabled {
-    cursor: default;
-    opacity: .5; }
-    .button-confirm:disabled:hover {
-      background-color: #008578; }
+  background-color: #008578;
+}
+.button-confirm:hover {
+  background-color: #00786c;
+}
+.button-confirm:active {
+  background-color: #006c61;
+}
+.button-confirm:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.button-confirm:disabled:hover {
+  background-color: #008578;
+}
 
 .button-cancel {
-  background-color: #6A6A6A; }
-  .button-cancel:hover {
-    background-color: #626665; }
-  .button-cancel:active {
-    background-color: #565A59; }
-  .button-cancel:disabled {
-    cursor: default;
-    opacity: .5; }
-    .button-cancel:disabled:hover {
-      background-color: #6A6A6A; }
+  background-color: #6a6a6a;
+}
+.button-cancel:hover {
+  background-color: #626665;
+}
+.button-cancel:active {
+  background-color: #565a59;
+}
+.button-cancel:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.button-cancel:disabled:hover {
+  background-color: #6a6a6a;
+}
 
-.button-group, .button-tabs {
-  margin-top: 1rem; }
-  .button-group button:not(:last-child), .button-tabs button:not(:last-child) {
-    margin-right: 1rem;
-    margin-bottom: 1rem; }
-  .button-group.button-secondary button, .button-tabs.button-secondary button {
-    border: #C94A18 2px solid;
-    padding: calc(0.75rem - 2px) calc(1rem - 2px);
-    background-color: white;
-    color: #C94A18; }
-    .button-group.button-secondary button:hover, .button-tabs.button-secondary button:hover {
-      border-color: #B54216;
-      color: #B54216;
-      background-color: white; }
-    .button-group.button-secondary button:active, .button-tabs.button-secondary button:active {
-      border-color: #A33B14;
-      color: #A33B14;
-      background-color: white; }
-  @media only screen and (max-width: 520px) {
-    .button-group, .button-tabs {
-      display: flex;
-      flex-direction: column; }
-      .button-group button:not(:last-child), .button-tabs button:not(:last-child) {
-        margin-right: 0; } }
+.button-group,
+.button-tabs {
+  margin-top: 1rem;
+}
+.button-group button:not(:last-child),
+.button-tabs button:not(:last-child) {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.button-group.button-secondary button,
+.button-tabs.button-secondary button {
+  border: #c94a18 2px solid;
+  padding: calc(0.75rem - 2px) calc(1rem - 2px);
+  background-color: white;
+  color: #c94a18;
+}
+.button-group.button-secondary button:hover,
+.button-tabs.button-secondary button:hover {
+  border-color: #b54216;
+  color: #b54216;
+  background-color: white;
+}
+.button-group.button-secondary button:active,
+.button-tabs.button-secondary button:active {
+  border-color: #a33b14;
+  color: #a33b14;
+  background-color: white;
+}
+@media only screen and (max-width: 520px) {
+  .button-group,
+  .button-tabs {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-group button:not(:last-child),
+  .button-tabs button:not(:last-child) {
+    margin-right: 0;
+  }
+}
 
 .button-tabs {
-  display: flex; }
-  .button-tabs button {
-    border: #C94A18 2px solid;
-    padding: calc(0.75rem - 2px) calc(1rem - 2px);
-    background-color: white;
-    color: #C94A18; }
-    .button-tabs button:hover {
-      border-color: #B54216;
-      color: #B54216;
-      background-color: white; }
-    .button-tabs button:active {
-      border-color: #A33B14;
-      color: #A33B14;
-      background-color: white; }
+  display: flex;
+}
+.button-tabs button {
+  border: #c94a18 2px solid;
+  padding: calc(0.75rem - 2px) calc(1rem - 2px);
+  background-color: white;
+  color: #c94a18;
+}
+.button-tabs button:hover {
+  border-color: #b54216;
+  color: #b54216;
+  background-color: white;
+}
+.button-tabs button:active {
+  border-color: #a33b14;
+  color: #a33b14;
+  background-color: white;
+}
+.button-tabs button:not(:last-child) {
+  margin: 0;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.button-tabs button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.button-tabs button.active {
+  color: #fff;
+  background-color: #c94a18;
+  border-color: #c94a18;
+}
+.button-tabs button.active + button {
+  border-left-color: #c94a18;
+}
+.button-tabs button:active {
+  color: #fff;
+  background-color: #a33b14;
+  border-color: #a33b14;
+}
+.button-tabs button:active + button {
+  border-left-color: #a33b14;
+}
+@media only screen and (max-width: 520px) {
   .button-tabs button:not(:last-child) {
     margin: 0;
-    border-right: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-bottom: none;
+    border-right: 2px solid #c94a18;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
   .button-tabs button:not(:first-child) {
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .button-tabs button.active {
-    color: #FFF;
-    background-color: #C94A18;
-    border-color: #C94A18; }
-    .button-tabs button.active + button {
-      border-left-color: #C94A18; }
-  .button-tabs button:active {
-    color: #FFF;
-    background-color: #A33B14;
-    border-color: #A33B14; }
-    .button-tabs button:active + button {
-      border-left-color: #A33B14; }
-  @media only screen and (max-width: 520px) {
-    .button-tabs button:not(:last-child) {
-      margin: 0;
-      border-bottom: none;
-      border-right: 2px solid #C94A18;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0; }
-    .button-tabs button:not(:first-child) {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; } }
+    border-bottom-left-radius: 0;
+  }
+}
