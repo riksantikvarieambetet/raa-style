@@ -1,21 +1,18 @@
 label {
   font-weight: 600;
   margin: 0.25rem 0;
-  display: flex;
-}
-label.select {
-  font-weight: 400;
-  font-size: 0.813rem;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
+  display: flex; }
+  label.select {
+    font-weight: 400;
+    font-size: 0.813rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center; }
 
 p.error-message {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  color: #db0000;
-}
+  color: #db0000; }
 
 input[type='text'],
 input[type='email'],
@@ -28,19 +25,16 @@ select {
   padding: 0.75rem;
   border: 1px solid #bababa;
   border-radius: 2px;
-  background-color: white;
-}
-input[type='text'].ng-invalid.ng-dirty,
-input[type='email'].ng-invalid.ng-dirty,
-input[type='phone'].ng-invalid.ng-dirty,
-textarea.ng-invalid.ng-dirty,
-select.ng-invalid.ng-dirty {
-  background-color: #fcebeb;
-}
+  background-color: white; }
+  input[type='text'].ng-invalid.ng-dirty,
+  input[type='email'].ng-invalid.ng-dirty,
+  input[type='phone'].ng-invalid.ng-dirty,
+  textarea.ng-invalid.ng-dirty,
+  select.ng-invalid.ng-dirty {
+    background-color: #fcebeb; }
 
 [id^='raa-checkbox'] {
-  display: none !important;
-}
+  display: none !important; }
 
 [for^='raa-checkbox']:before {
   font-family: 'Source Sans Pro', 'raa-icons';
@@ -50,8 +44,7 @@ select.ng-invalid.ng-dirty {
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: #3a3a3a;
-}
+  color: #3a3a3a; }
 
 [type='checkbox']:checked + [for^='raa-checkbox']:before {
   background: white;
@@ -59,12 +52,10 @@ select.ng-invalid.ng-dirty {
   content: '\e948';
   transition: all 0.2s;
   font-size: 1.25rem;
-  color: #008578;
-}
+  color: #008578; }
 
 [id^='raa-radiobutton'] {
-  display: none !important;
-}
+  display: none !important; }
 
 [for^='raa-radiobutton']:before {
   font-family: 'Source Sans Pro', 'raa-icons';
@@ -74,13 +65,11 @@ select.ng-invalid.ng-dirty {
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: #3a3a3a;
-}
+  color: #3a3a3a; }
 
 [type='radio']:checked + [for^='raa-radiobutton']:before {
   background: white;
   font-family: 'Source Sans Pro', 'raa-icons';
   content: '\e940';
   transition: all 0.2s;
-  font-size: 1.25rem;
-}
+  font-size: 1.25rem; }
