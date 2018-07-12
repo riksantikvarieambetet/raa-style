@@ -16,7 +16,7 @@ p.error-message {
 
 input[type='text'],
 input[type='email'],
-input[type='phone'],
+input[type='tel'],
 textarea,
 select {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ select {
   background-color: white; }
   input[type='text'].ng-invalid.ng-dirty,
   input[type='email'].ng-invalid.ng-dirty,
-  input[type='phone'].ng-invalid.ng-dirty,
+  input[type='tel'].ng-invalid.ng-dirty,
   textarea.ng-invalid.ng-dirty,
   select.ng-invalid.ng-dirty {
     background-color: #fcebeb; }
