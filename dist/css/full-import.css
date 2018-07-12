@@ -12,10 +12,10 @@
     display: none; } }
 
 button {
-  background-color: #C94A18;
+  background-color: #c94a18;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
-  transition: all .4s;
+  transition: all 0.4s;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
@@ -26,96 +26,103 @@ button {
   min-width: 8rem;
   letter-spacing: 0.2px; }
   button:hover {
-    background-color: #B54216; }
+    background-color: #b54216; }
   button:active {
-    background-color: #A33B14; }
+    background-color: #a33b14; }
   button:disabled {
     cursor: default;
-    opacity: .5; }
+    opacity: 0.5; }
     button:disabled:hover {
-      background-color: #C94A18; }
+      background-color: #c94a18; }
   @media only screen and (max-width: 520px) {
     button {
       width: 100%;
       display: block; } }
 
 button.button-secondary {
-  border: #C94A18 2px solid;
+  border: #c94a18 2px solid;
   padding: calc(0.75rem - 2px) calc(1rem - 2px);
   background-color: white;
-  color: #C94A18; }
+  color: #c94a18; }
   button.button-secondary:hover {
-    border-color: #B54216;
-    color: #B54216;
+    border-color: #b54216;
+    color: #b54216;
     background-color: white; }
   button.button-secondary:active {
-    border-color: #A33B14;
-    color: #A33B14;
+    border-color: #a33b14;
+    color: #a33b14;
     background-color: white; }
 
 .button-confirm {
   background-color: #008578; }
   .button-confirm:hover {
-    background-color: #00786C; }
+    background-color: #00786c; }
   .button-confirm:active {
-    background-color: #006C61; }
+    background-color: #006c61; }
   .button-confirm:disabled {
     cursor: default;
-    opacity: .5; }
+    opacity: 0.5; }
     .button-confirm:disabled:hover {
       background-color: #008578; }
 
 .button-cancel {
-  background-color: #6A6A6A; }
+  background-color: #6a6a6a; }
   .button-cancel:hover {
     background-color: #626665; }
   .button-cancel:active {
-    background-color: #565A59; }
+    background-color: #565a59; }
   .button-cancel:disabled {
     cursor: default;
-    opacity: .5; }
+    opacity: 0.5; }
     .button-cancel:disabled:hover {
-      background-color: #6A6A6A; }
+      background-color: #6a6a6a; }
 
-.button-group, .button-tabs {
+.button-group,
+.button-tabs {
   margin-top: 1rem; }
-  .button-group button:not(:last-child), .button-tabs button:not(:last-child) {
+  .button-group button:not(:last-child),
+  .button-tabs button:not(:last-child) {
     margin-right: 1rem;
     margin-bottom: 1rem; }
-  .button-group.button-secondary button, .button-tabs.button-secondary button {
-    border: #C94A18 2px solid;
+  .button-group.button-secondary button,
+  .button-tabs.button-secondary button {
+    border: #c94a18 2px solid;
     padding: calc(0.75rem - 2px) calc(1rem - 2px);
     background-color: white;
-    color: #C94A18; }
-    .button-group.button-secondary button:hover, .button-tabs.button-secondary button:hover {
-      border-color: #B54216;
-      color: #B54216;
+    color: #c94a18; }
+    .button-group.button-secondary button:hover,
+    .button-tabs.button-secondary button:hover {
+      border-color: #b54216;
+      color: #b54216;
       background-color: white; }
-    .button-group.button-secondary button:active, .button-tabs.button-secondary button:active {
-      border-color: #A33B14;
-      color: #A33B14;
+    .button-group.button-secondary button:active,
+    .button-tabs.button-secondary button:active {
+      border-color: #a33b14;
+      color: #a33b14;
       background-color: white; }
   @media only screen and (max-width: 520px) {
-    .button-group, .button-tabs {
+    .button-group,
+    .button-tabs {
       display: flex;
       flex-direction: column; }
-      .button-group button:not(:last-child), .button-tabs button:not(:last-child) {
+      .button-group button:not(:last-child),
+      .button-tabs button:not(:last-child) {
         margin-right: 0; } }
 
 .button-tabs {
   display: flex; }
   .button-tabs button {
-    border: #C94A18 2px solid;
+    border: #c94a18 2px solid;
     padding: calc(0.75rem - 2px) calc(1rem - 2px);
     background-color: white;
-    color: #C94A18; }
+    color: #c94a18; }
     .button-tabs button:hover {
-      border-color: #B54216;
-      color: #B54216;
+      border-color: #b54216;
+      color: #b54216;
       background-color: white; }
     .button-tabs button:active {
-      border-color: #A33B14;
-      color: #A33B14;
+      border-color: #a33b14;
+      color: #a33b14;
       background-color: white; }
   .button-tabs button:not(:last-child) {
     margin: 0;
@@ -126,22 +133,22 @@ button.button-secondary {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
   .button-tabs button.active {
-    color: #FFF;
-    background-color: #C94A18;
-    border-color: #C94A18; }
+    color: #fff;
+    background-color: #c94a18;
+    border-color: #c94a18; }
     .button-tabs button.active + button {
-      border-left-color: #C94A18; }
+      border-left-color: #c94a18; }
   .button-tabs button:active {
-    color: #FFF;
-    background-color: #A33B14;
-    border-color: #A33B14; }
+    color: #fff;
+    background-color: #a33b14;
+    border-color: #a33b14; }
     .button-tabs button:active + button {
-      border-left-color: #A33B14; }
+      border-left-color: #a33b14; }
   @media only screen and (max-width: 520px) {
     .button-tabs button:not(:last-child) {
       margin: 0;
       border-bottom: none;
-      border-right: 2px solid #C94A18;
+      border-right: 2px solid #c94a18;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0; }
     .button-tabs button:not(:first-child) {
@@ -149,40 +156,40 @@ button.button-secondary {
       border-bottom-left-radius: 0; } }
 
 .raa-color-orange {
-  color: #C94A18; }
+  color: #c94a18; }
 
 .raa-color-white {
-  color: #FFF; }
+  color: #fff; }
 
 .raa-color-gray-4 {
-  color: #6A6A6A; }
+  color: #6a6a6a; }
 
 .raa-color-gray-5 {
-  color: #3A3A3A; }
+  color: #3a3a3a; }
 
 .raa-color-red {
-  color: #DB0000; }
+  color: #db0000; }
 
 .raa-bg-color-orange {
-  background-color: #C94A18; }
+  background-color: #c94a18; }
 
 .raa-bg-color-white {
-  background-color: #FFF; }
+  background-color: #fff; }
 
 .raa-bg-color-gray-1 {
-  background-color: #FBFBFB; }
+  background-color: #fbfbfb; }
 
 .raa-bg-color-gray-2 {
-  background-color: #DADADA; }
+  background-color: #dadada; }
 
 .raa-bg-color-gray-3 {
-  background-color: #BABABA; }
+  background-color: #bababa; }
 
 .raa-bg-color-gray-4 {
-  background-color: #6A6A6A; }
+  background-color: #6a6a6a; }
 
 .raa-bg-color-red-light {
-  background-color: #FCEBEB; }
+  background-color: #fcebeb; }
 
 @font-face {
   font-family: 'raa-icons';
@@ -191,7 +198,8 @@ button.button-secondary {
   font-weight: normal;
   font-style: normal; }
 
-[class^="raa-icon-"], [class*=" raa-icon-"] {
+[class^='raa-icon-'],
+[class*=' raa-icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'raa-icons' !important;
   speak: none;
@@ -205,229 +213,229 @@ button.button-secondary {
   -moz-osx-font-smoothing: grayscale; }
 
 .raa-icon-radiobutton-selected:before {
-  content: "\e940"; }
+  content: '\e940'; }
 
 .raa-icon-radiobutton-unselected:before {
-  content: "\e941"; }
+  content: '\e941'; }
 
 .raa-icon-lock-closed:before {
-  content: "\e943"; }
+  content: '\e943'; }
 
 .raa-icon-lock-open:before {
-  content: "\e944"; }
+  content: '\e944'; }
 
 .raa-icon-refresh:before {
-  content: "\e946"; }
+  content: '\e946'; }
 
 .raa-icon-checkbox-selected:before {
-  content: "\e948"; }
+  content: '\e948'; }
 
 .raa-icon-checkbox-unselected:before {
-  content: "\e949"; }
+  content: '\e949'; }
 
 .raa-icon-file:before {
-  content: "\e94a"; }
+  content: '\e94a'; }
 
 .raa-icon-download:before {
-  content: "\e94b"; }
+  content: '\e94b'; }
 
 .raa-icon-play:before {
-  content: "\e94c"; }
+  content: '\e94c'; }
 
 .raa-icon-pause:before {
-  content: "\e94d"; }
+  content: '\e94d'; }
 
 .raa-icon-hourglass:before {
-  content: "\e93e"; }
+  content: '\e93e'; }
 
 .raa-icon-info:before {
-  content: "\e938"; }
+  content: '\e938'; }
 
 .raa-icon-error:before {
-  content: "\e939"; }
+  content: '\e939'; }
 
 .raa-icon-draw-polygon:before {
-  content: "\e93a"; }
+  content: '\e93a'; }
 
 .raa-icon-layers:before {
-  content: "\e93b"; }
+  content: '\e93b'; }
 
 .raa-icon-map:before {
-  content: "\e93c"; }
+  content: '\e93c'; }
 
 .raa-icon-measure:before {
-  content: "\e93d"; }
+  content: '\e93d'; }
 
 .raa-icon-terrain:before {
-  content: "\e93f"; }
+  content: '\e93f'; }
 
 .raa-icon-facebook:before {
-  content: "\e900"; }
+  content: '\e900'; }
 
 .raa-icon-instagram:before {
-  content: "\e901"; }
+  content: '\e901'; }
 
 .raa-icon-linkedin:before {
-  content: "\e902"; }
+  content: '\e902'; }
 
 .raa-icon-notification-none:before {
-  content: "\e903"; }
+  content: '\e903'; }
 
 .raa-icon-notificaton-active:before {
-  content: "\e904"; }
+  content: '\e904'; }
 
 .raa-icon-twitter:before {
-  content: "\e905"; }
+  content: '\e905'; }
 
 .raa-icon-wikipedia:before {
-  content: "\e906"; }
+  content: '\e906'; }
 
 .raa-icon-youtube:before {
-  content: "\e907"; }
+  content: '\e907'; }
 
 .raa-icon-arrow-double-left:before {
-  content: "\e908"; }
+  content: '\e908'; }
 
 .raa-icon-arrow-double-right:before {
-  content: "\e909"; }
+  content: '\e909'; }
 
 .raa-icon-arrow-down:before {
-  content: "\e90a"; }
+  content: '\e90a'; }
 
 .raa-icon-arrow-left:before {
-  content: "\e90b"; }
+  content: '\e90b'; }
 
 .raa-icon-arrow-right:before {
-  content: "\e90c"; }
+  content: '\e90c'; }
 
 .raa-icon-arrow-up:before {
-  content: "\e90d"; }
+  content: '\e90d'; }
 
 .raa-icon-close:before {
-  content: "\e90e"; }
+  content: '\e90e'; }
 
 .raa-icon-dropdown-down:before {
-  content: "\e90f"; }
+  content: '\e90f'; }
 
 .raa-icon-dropdown-up:before {
-  content: "\e910"; }
+  content: '\e910'; }
 
 .raa-icon-externallink:before {
-  content: "\e911"; }
+  content: '\e911'; }
 
 .raa-icon-fullscreen-exit:before {
-  content: "\e912"; }
+  content: '\e912'; }
 
 .raa-icon-fullscreen:before {
-  content: "\e913"; }
+  content: '\e913'; }
 
 .raa-icon-menu:before {
-  content: "\e914"; }
+  content: '\e914'; }
 
 .raa-icon-more-horiz:before {
-  content: "\e915"; }
+  content: '\e915'; }
 
 .raa-icon-more-vert:before {
-  content: "\e916"; }
+  content: '\e916'; }
 
 .raa-icon-place:before {
-  content: "\e917"; }
+  content: '\e917'; }
 
 .raa-icon-add-circle:before {
-  content: "\e918"; }
+  content: '\e918'; }
 
 .raa-icon-add-photo:before {
-  content: "\e919"; }
+  content: '\e919'; }
 
 .raa-icon-add:before {
-  content: "\e91a"; }
+  content: '\e91a'; }
 
 .raa-icon-collection-add:before {
-  content: "\e91b"; }
+  content: '\e91b'; }
 
 .raa-icon-collection:before {
-  content: "\e91c"; }
+  content: '\e91c'; }
 
 .raa-icon-edit:before {
-  content: "\e91d"; }
+  content: '\e91d'; }
 
 .raa-icon-image:before {
-  content: "\e91e"; }
+  content: '\e91e'; }
 
 .raa-icon-link:before {
-  content: "\e91f"; }
+  content: '\e91f'; }
 
 .raa-icon-remove-circle:before {
-  content: "\e920"; }
+  content: '\e920'; }
 
 .raa-icon-remove:before {
-  content: "\e921"; }
+  content: '\e921'; }
 
 .raa-icon-tag:before {
-  content: "\e922"; }
+  content: '\e922'; }
 
 .raa-icon-comment:before {
-  content: "\e923"; }
+  content: '\e923'; }
 
 .raa-icon-comments-outline:before {
-  content: "\e924"; }
+  content: '\e924'; }
 
 .raa-icon-mail:before {
-  content: "\e925"; }
+  content: '\e925'; }
 
 .raa-icon-phone:before {
-  content: "\e926"; }
+  content: '\e926'; }
 
 .raa-icon-check:before {
-  content: "\e927"; }
+  content: '\e927'; }
 
 .raa-icon-date:before {
-  content: "\e928"; }
+  content: '\e928'; }
 
 .raa-icon-delete:before {
-  content: "\e929"; }
+  content: '\e929'; }
 
 .raa-icon-favourite-selected:before {
-  content: "\e92a"; }
+  content: '\e92a'; }
 
 .raa-icon-favourite-unselected:before {
-  content: "\e92b"; }
+  content: '\e92b'; }
 
 .raa-icon-help:before {
-  content: "\e92c"; }
+  content: '\e92c'; }
 
 .raa-icon-keyboard:before {
-  content: "\e92d"; }
+  content: '\e92d'; }
 
 .raa-icon-label:before {
-  content: "\e92e"; }
+  content: '\e92e'; }
 
 .raa-icon-like-selected:before {
-  content: "\e92f"; }
+  content: '\e92f'; }
 
 .raa-icon-like-unselected:before {
-  content: "\e930"; }
+  content: '\e930'; }
 
 .raa-icon-list:before {
-  content: "\e931"; }
+  content: '\e931'; }
 
 .raa-icon-print:before {
-  content: "\e932"; }
+  content: '\e932'; }
 
 .raa-icon-search:before {
-  content: "\e933"; }
+  content: '\e933'; }
 
 .raa-icon-settings:before {
-  content: "\e934"; }
+  content: '\e934'; }
 
 .raa-icon-user:before {
-  content: "\e935"; }
+  content: '\e935'; }
 
 .raa-icon-visibility-off:before {
-  content: "\e936"; }
+  content: '\e936'; }
 
 .raa-icon-visibility-on:before {
-  content: "\e937"; }
+  content: '\e937'; }
 
 @media only screen and (max-width: 520px) {
   .hide-when-handhelds {
@@ -858,13 +866,20 @@ template {
   display: none; }
 
 body {
+  /* prettier-ignore */
   font-size: 16px;
   font-weight: normal;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #3A3A3A;
+  color: #3a3a3a;
   letter-spacing: normal; }
 
-.hero, h1, h2, h3, h4, p, .large-text {
+.hero,
+h1,
+h2,
+h3,
+h4,
+p,
+.large-text {
   font-weight: normal; }
 
 .hero {
@@ -900,17 +915,17 @@ p {
   line-height: 1rem; }
 
 a {
-  transition: all .4s;
-  color: #C94A18;
+  transition: all 0.4s;
+  color: #c94a18;
   text-decoration: underline;
   text-decoration-color: transparent;
   cursor: pointer; }
   a:hover {
-    color: #B54216;
-    text-decoration-color: #B54216; }
+    color: #b54216;
+    text-decoration-color: #b54216; }
   a:active {
-    color: #A33B14;
-    text-decoration-color: #B54216; }
+    color: #a33b14;
+    text-decoration-color: #b54216; }
 
 @media only screen and (min-width: 521px) and (max-width: 1023px) {
   .hero {
