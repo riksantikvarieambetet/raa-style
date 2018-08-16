@@ -85,3 +85,8 @@ select {
   font-size: 1.25rem;
   // color: $raa-green;
 }
+
+select {
+    appearance: none; 
+    background: transparent url("/assets/images/arrow.png") no-repeat calc(100% - 1rem) center;
+}

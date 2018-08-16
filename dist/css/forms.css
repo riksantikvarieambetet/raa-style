@@ -73,3 +73,7 @@ select {
   content: '\e940';
   transition: all 0.2s;
   font-size: 1.25rem; }
+
+select {
+  appearance: none;
+  background: transparent url("/assets/images/arrow.png") no-repeat calc(100% - 1rem) center; }
