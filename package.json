@@ -6,11 +6,13 @@
   "scripts": {
     "start": "npm run build && node-sass -w src --output dist/css",
     "clean": "rm -Rf dist",
-    "build": "npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-assets",
+    "build": "yarn tailwind && npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-assets",
+    "build:copy-tailwind-config": "cp ./tailwind.js dist/",
     "build:css": "node-sass src --output dist/css",
     "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
     "build:list-icons": "node list-icons.js",
     "build:copy-assets": "cp -R assets dist/",
+    "tailwind": "./node_modules/.bin/tailwind build ./tailwind-build.css -c ./tailwind.js -o ./src/raa-tailwind.css",
     "prepublish": "npm run clean && npm run build",
     "precommit": "pretty-quick --staged"
   },
@@ -31,7 +33,8 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.7.2",
     "prettier": "^1.13.7",
-    "pretty-quick": "^1.6.0"
+    "pretty-quick": "^1.6.0",
+    "tailwindcss": "^0.6.5"
   },
   "private": false
 }
