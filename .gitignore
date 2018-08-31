@@ -4,4 +4,4 @@ yarn-error.log
 npm-debug.log
 
 # Tailwind generated css
-/src/raa-tailwind.css
+/src/_raa-tailwind.scss
