@@ -10,6 +10,9 @@
 .tw-bg-transparent {
   background-color: transparent; }
 
+.tw-bg-raa-white {
+  background-color: #fff; }
+
 .tw-bg-raa-black-1 {
   background-color: #000; }
 
@@ -48,6 +51,9 @@
 
 .hover\:tw-bg-transparent:hover {
   background-color: transparent; }
+
+.hover\:tw-bg-raa-white:hover {
+  background-color: #fff; }
 
 .hover\:tw-bg-raa-black-1:hover {
   background-color: #000; }
@@ -88,6 +94,9 @@
 .focus\:tw-bg-transparent:focus {
   background-color: transparent; }
 
+.focus\:tw-bg-raa-white:focus {
+  background-color: #fff; }
+
 .focus\:tw-bg-raa-black-1:focus {
   background-color: #000; }
 
@@ -126,6 +135,9 @@
 
 .tw-text-transparent {
   color: transparent; }
+
+.tw-text-raa-white {
+  color: #fff; }
 
 .tw-text-raa-black-1 {
   color: #000; }
@@ -166,6 +178,9 @@
 .hover\:tw-text-transparent:hover {
   color: transparent; }
 
+.hover\:tw-text-raa-white:hover {
+  color: #fff; }
+
 .hover\:tw-text-raa-black-1:hover {
   color: #000; }
 
@@ -204,6 +219,9 @@
 
 .focus\:tw-text-transparent:focus {
   color: transparent; }
+
+.focus\:tw-text-raa-white:focus {
+  color: #fff; }
 
 .focus\:tw-text-raa-black-1:focus {
   color: #000; }
@@ -244,6 +262,8 @@
 @media (min-width: 521px) {
   .md\:tw-bg-transparent {
     background-color: transparent; }
+  .md\:tw-bg-raa-white {
+    background-color: #fff; }
   .md\:tw-bg-raa-black-1 {
     background-color: #000; }
   .md\:tw-bg-raa-black-2 {
@@ -270,6 +290,8 @@
     background-color: #fcebeb; }
   .md\:hover\:tw-bg-transparent:hover {
     background-color: transparent; }
+  .md\:hover\:tw-bg-raa-white:hover {
+    background-color: #fff; }
   .md\:hover\:tw-bg-raa-black-1:hover {
     background-color: #000; }
   .md\:hover\:tw-bg-raa-black-2:hover {
@@ -296,6 +318,8 @@
     background-color: #fcebeb; }
   .md\:focus\:tw-bg-transparent:focus {
     background-color: transparent; }
+  .md\:focus\:tw-bg-raa-white:focus {
+    background-color: #fff; }
   .md\:focus\:tw-bg-raa-black-1:focus {
     background-color: #000; }
   .md\:focus\:tw-bg-raa-black-2:focus {
@@ -322,6 +346,8 @@
     background-color: #fcebeb; }
   .md\:tw-text-transparent {
     color: transparent; }
+  .md\:tw-text-raa-white {
+    color: #fff; }
   .md\:tw-text-raa-black-1 {
     color: #000; }
   .md\:tw-text-raa-black-2 {
@@ -348,6 +374,8 @@
     color: #fcebeb; }
   .md\:hover\:tw-text-transparent:hover {
     color: transparent; }
+  .md\:hover\:tw-text-raa-white:hover {
+    color: #fff; }
   .md\:hover\:tw-text-raa-black-1:hover {
     color: #000; }
   .md\:hover\:tw-text-raa-black-2:hover {
@@ -374,6 +402,8 @@
     color: #fcebeb; }
   .md\:focus\:tw-text-transparent:focus {
     color: transparent; }
+  .md\:focus\:tw-text-raa-white:focus {
+    color: #fff; }
   .md\:focus\:tw-text-raa-black-1:focus {
     color: #000; }
   .md\:focus\:tw-text-raa-black-2:focus {
@@ -402,6 +432,8 @@
 @media (min-width: 1025px) {
   .lg\:tw-bg-transparent {
     background-color: transparent; }
+  .lg\:tw-bg-raa-white {
+    background-color: #fff; }
   .lg\:tw-bg-raa-black-1 {
     background-color: #000; }
   .lg\:tw-bg-raa-black-2 {
@@ -428,6 +460,8 @@
     background-color: #fcebeb; }
   .lg\:hover\:tw-bg-transparent:hover {
     background-color: transparent; }
+  .lg\:hover\:tw-bg-raa-white:hover {
+    background-color: #fff; }
   .lg\:hover\:tw-bg-raa-black-1:hover {
     background-color: #000; }
   .lg\:hover\:tw-bg-raa-black-2:hover {
@@ -454,6 +488,8 @@
     background-color: #fcebeb; }
   .lg\:focus\:tw-bg-transparent:focus {
     background-color: transparent; }
+  .lg\:focus\:tw-bg-raa-white:focus {
+    background-color: #fff; }
   .lg\:focus\:tw-bg-raa-black-1:focus {
     background-color: #000; }
   .lg\:focus\:tw-bg-raa-black-2:focus {
@@ -480,6 +516,8 @@
     background-color: #fcebeb; }
   .lg\:tw-text-transparent {
     color: transparent; }
+  .lg\:tw-text-raa-white {
+    color: #fff; }
   .lg\:tw-text-raa-black-1 {
     color: #000; }
   .lg\:tw-text-raa-black-2 {
@@ -506,6 +544,8 @@
     color: #fcebeb; }
   .lg\:hover\:tw-text-transparent:hover {
     color: transparent; }
+  .lg\:hover\:tw-text-raa-white:hover {
+    color: #fff; }
   .lg\:hover\:tw-text-raa-black-1:hover {
     color: #000; }
   .lg\:hover\:tw-text-raa-black-2:hover {
@@ -532,6 +572,8 @@
     color: #fcebeb; }
   .lg\:focus\:tw-text-transparent:focus {
     color: transparent; }
+  .lg\:focus\:tw-text-raa-white:focus {
+    color: #fff; }
   .lg\:focus\:tw-text-raa-black-1:focus {
     color: #000; }
   .lg\:focus\:tw-text-raa-black-2:focus {
