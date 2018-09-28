@@ -1,7 +1,7 @@
 {
   "name": "raa-style",
-  "version": "2.0.6",
-  "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo fins på http://styleguide.raa.se/.",
+  "version": "2.0.7",
+  "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på http://styleguide.raa.se/.",
   "main": "",
   "scripts": {
     "start": "npm run build && node-sass -w src --output dist/css",

@@ -44,6 +44,7 @@ View the full documentation at https://tailwindcss.com.
 
 const colors = {
   transparent: 'transparent',
+  'raa-white': '#ffffff',
   'raa-black-1': '#000000',
   'raa-black-2': '#3a3a3a',
   'raa-orange': '#C94A18',
