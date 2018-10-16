@@ -14,12 +14,13 @@ button {
   background-color: #c94a18;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
-  transition: all 0.4s;
+  transition: background-color, border-color 0.4s;
+  box-sizing: border-box;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.75rem 1rem;
+  padding: 0.7rem 1rem;
   border: none;
   border-radius: 2px;
   min-width: 8rem;
@@ -40,7 +41,7 @@ button {
 
 button.button-secondary {
   border: #c94a18 2px solid;
-  padding: calc(0.75rem - 2px) calc(1rem - 2px);
+  padding: calc(0.7rem - 2px) calc(1rem - 2px);
   background-color: white;
   color: #c94a18; }
   button.button-secondary:hover {
@@ -76,80 +77,19 @@ button.button-secondary {
     .button-cancel:disabled:hover {
       background-color: #6a6a6a; }
 
-.button-group,
 .button-tabs {
-  margin-top: 1rem; }
-  .button-group button:not(:last-child),
-  .button-tabs button:not(:last-child) {
-    margin-right: 1rem;
-    margin-bottom: 1rem; }
-  .button-group.button-secondary button,
-  .button-tabs.button-secondary button {
-    border: #c94a18 2px solid;
-    padding: calc(0.75rem - 2px) calc(1rem - 2px);
-    background-color: white;
-    color: #c94a18; }
-    .button-group.button-secondary button:hover,
-    .button-tabs.button-secondary button:hover {
-      border-color: #b54216;
-      color: #b54216;
-      background-color: white; }
-    .button-group.button-secondary button:active,
-    .button-tabs.button-secondary button:active {
-      border-color: #a33b14;
-      color: #a33b14;
-      background-color: white; }
-  @media only screen and (max-width: 520px) {
-    .button-group,
-    .button-tabs {
-      display: flex;
-      flex-direction: column; }
-      .button-group button:not(:last-child),
-      .button-tabs button:not(:last-child) {
-        margin-right: 0; } }
-
-.button-tabs {
-  display: flex; }
+  display: flex;
+  box-shadow: inset 0px -2px 0px #c94a18;
+  padding: 0 1rem; }
   .button-tabs button {
-    border: #c94a18 2px solid;
-    padding: calc(0.75rem - 2px) calc(1rem - 2px);
-    background-color: white;
-    color: #c94a18; }
-    .button-tabs button:hover {
-      border-color: #b54216;
-      color: #b54216;
-      background-color: white; }
-    .button-tabs button:active {
-      border-color: #a33b14;
-      color: #a33b14;
-      background-color: white; }
+    padding: calc(0.7rem - 1px) calc(1rem - 2px); }
   .button-tabs button:not(:last-child) {
     margin: 0;
-    border-right: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  .button-tabs button:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
+    margin-right: .5rem;
+    border-right: none; }
   .button-tabs button.active {
-    color: #fff;
-    background-color: #c94a18;
-    border-color: #c94a18; }
-    .button-tabs button.active + button {
-      border-left-color: #c94a18; }
-  .button-tabs button:active {
-    color: #fff;
-    background-color: #a33b14;
-    border-color: #a33b14; }
-    .button-tabs button:active + button {
-      border-left-color: #a33b14; }
-  @media only screen and (max-width: 520px) {
-    .button-tabs button:not(:last-child) {
-      margin: 0;
-      border-bottom: none;
-      border-right: 2px solid #c94a18;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0; }
-    .button-tabs button:not(:first-child) {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; } }
+    box-sizing: border-box;
+    color: #c94a18;
+    background-color: #fff;
+    border: 2px solid #c94a18;
+    border-bottom: none; }
