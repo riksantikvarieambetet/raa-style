@@ -48,8 +48,8 @@ const colors = {
   'raa-black-1': '#000000',
   'raa-black-2': '#3a3a3a',
   'raa-orange-1': '#C94A18',
-  'raa-orange-2': '#b54216',
-  'raa-orange-3': '#a33b14',
+  'raa-orange-2': '#b54216', // Från styleguiden och bör gälla?
+  'raa-orange-3': '#a33b14', // Från styleguiden och bör gälla?
   'raa-gray-1': '#FBFBFB',
   'raa-gray-2': '#DADADA',
   'raa-gray-3': '#BABABA',
