@@ -1,6 +1,6 @@
 {
   "name": "raa-style",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på http://styleguide.raa.se/.",
   "main": "",
   "scripts": {
@@ -12,7 +12,7 @@
     "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
     "build:list-icons": "node list-icons.js",
     "build:copy-assets": "cp -R assets dist/",
-    "tailwind": "./node_modules/.bin/tailwind build ./tailwind-build.css -c ./tailwind.js -o ./src/_raa-tailwind.scss",
+    "tailwind": "./node_modules/.bin/tailwind build ./tailwind-build.css -c ./tailwind.js -o ./src/raa-tailwind.scss",
     "prepublish": "npm run clean && npm run build",
     "precommit": "pretty-quick --staged"
   },

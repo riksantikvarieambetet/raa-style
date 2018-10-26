@@ -4,7 +4,7 @@ yarn-error.log
 npm-debug.log
 
 # Tailwind generated css
-/src/_raa-tailwind.scss
+/src/raa-tailwind.scss
 
 # IDEs och editorer
 /.idea
