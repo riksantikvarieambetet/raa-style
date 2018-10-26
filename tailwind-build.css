@@ -17,10 +17,7 @@
  */
 
 .raa-button {
-  @apply .tw-border-raa-orange-1
-    .tw-border-2
-    .tw-border-solid
-    .tw-bg-raa-orange-1
+  @apply .tw-bg-raa-orange-1
     .tw-cursor-pointer
     .tw-text-raa-white
     .tw-uppercase
@@ -35,6 +32,7 @@
   box-sizing: border-box;
   min-width: 8rem;
   letter-spacing: 0.2px;
+  border: none;
 }
 
 .raa-button:hover {
