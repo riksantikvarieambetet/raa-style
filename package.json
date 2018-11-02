@@ -13,6 +13,8 @@
     "build:list-icons": "node list-icons.js",
     "build:copy-assets": "cp -R assets dist/",
     "tailwind": "./node_modules/.bin/tailwind build ./tailwind-build.css -c ./tailwind.js -o ./src/raa-tailwind.scss",
+    "tailwind:button": "./node_modules/.bin/tailwind build ./tailwind-build.button.css -c ./tailwind.js -o ./src/raa-tailwind.button.scss",
+    "tailwind:typography": "./node_modules/.bin/tailwind build ./tailwind-build.typography.css -c ./tailwind.js -o ./src/raa-tailwind.typography.scss",
     "prepublish": "npm run clean && npm run build",
     "precommit": "pretty-quick --staged"
   },

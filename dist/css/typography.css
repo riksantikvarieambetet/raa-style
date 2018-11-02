@@ -464,19 +464,6 @@ p {
   font-size: 0.813rem;
   line-height: 1rem; }
 
-a {
-  transition: all 0.4s;
-  color: #c94a18;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  cursor: pointer; }
-  a:hover {
-    color: #b54216;
-    text-decoration-color: #b54216; }
-  a:active {
-    color: #a33b14;
-    text-decoration-color: #b54216; }
-
 @media only screen and (min-width: 521px) and (max-width: 1023px) {
   .hero {
     font-size: 3.75rem;

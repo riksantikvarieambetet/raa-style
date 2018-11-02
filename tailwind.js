@@ -101,6 +101,7 @@ module.exports = {
   */
 
   screens: {
+    sm: '520px',
     md: '571px',
     lg: '1025px',
   },
@@ -173,12 +174,12 @@ module.exports = {
   */
 
   textSizes: {
-    sm: '.813rem', // 14px
+    sm: '.813rem', // 13px
     base: '1rem', // 16px
-    lg: '1.313rem', // 18px
-    header: '1.75rem', // 20px
-    title: '2.25rem',
-    hero: '3.74rem',
+    lg: '1.313rem', // 21px
+    header: '1.75rem', // 28px
+    title: '2.25rem', // 36px
+    hero: '3.74rem', // 60px
   },
 
   /*
@@ -384,6 +385,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '72': '18rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -431,6 +433,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '72': '18rem',
     full: '100%',
     screen: '100vh',
   },
@@ -748,15 +751,15 @@ module.exports = {
   modules: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColors: ['responsive', 'hover', 'focus'],
+    backgroundColors: ['responsive', 'hover', 'focus', 'active'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: [],
-    borderColors: ['responsive', 'hover', 'focus'],
+    borderColors: ['responsive', 'hover', 'focus', 'active'],
     borderRadius: ['responsive'],
-    borderStyle: ['responsive'],
-    borderWidths: ['responsive'],
+    borderStyle: ['hover', 'focus', 'active'],
+    borderWidths: ['responsive', 'hover', 'focus', 'active'],
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
@@ -784,9 +787,9 @@ module.exports = {
     svgStroke: [],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColors: ['responsive', 'hover', 'focus'],
+    textColors: ['responsive', 'hover', 'focus', 'active'],
     textSizes: ['responsive'],
-    textStyle: ['responsive', 'hover', 'focus'],
+    textStyle: ['responsive', 'hover', 'focus', 'active'],
     tracking: ['responsive'],
     userSelect: ['responsive'],
     verticalAlign: ['responsive'],

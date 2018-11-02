@@ -1,0 +1,24 @@
+.raa-link {
+  display: inline-block;
+  text-decoration: none;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  color: #c94a18;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  cursor: pointer;
+  transition: all 0.4s;
+  line-height: 0.1;
+}
+
+.raa-link:hover {
+  color: #b54216;
+  border-color: #b54216;
+}
+
+.raa-link:active {
+  color: #a33b14;
+  border-color: #b54216;
+}

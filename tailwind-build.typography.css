@@ -1,0 +1,13 @@
+.raa-link {
+  @apply .tw-inline-block .tw-no-underline .tw-border-t-0 .tw-border-r-0 .tw-border-l-0 .tw-text-raa-orange-1 .tw-border-b .tw-border-transparent .tw-border-solid .tw-cursor-pointer;
+  transition: all 0.4s;
+  line-height: 0.1;
+}
+
+.raa-link:hover {
+  @apply .tw-text-raa-orange-2 .tw-border-raa-orange-2;
+}
+
+.raa-link:active {
+  @apply .tw-text-raa-orange-3 .tw-border-raa-orange-2;
+}
