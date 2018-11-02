@@ -72,24 +72,6 @@ p {
   line-height: 1rem;
 }
 
-//a {
-//  transition: all 0.4s;
-//  color: $raa-orange;
-//  text-decoration: underline;
-//  text-decoration-color: transparent;
-//  cursor: pointer;
-//
-//  &:hover {
-//    color: #b54216;
-//    text-decoration-color: #b54216;
-//  }
-//
-//  &:active {
-//    color: #a33b14;
-//    text-decoration-color: #b54216;
-//  }
-//}
-
 // Mediumstora skärmar
 
 @include respond-to(medium-screens) {
