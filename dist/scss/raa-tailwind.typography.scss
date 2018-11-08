@@ -18,6 +18,23 @@
   border-color: #b54216;
 }
 
+.raa-label {
+  display: flex;
+  font-weight: 600;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.raa-label.select {
+  position: relative;
+  font-weight: 400;
+  font-size: .813rem;
+  display: inline-flex;
+  align-items: center;
+}
+
 .raa-h1 {
   font-size: 3rem;
   line-height: 3.125rem;

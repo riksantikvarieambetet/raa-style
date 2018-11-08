@@ -1,14 +1,3 @@
-label {
-  font-weight: 600;
-  margin: 0.25rem 0;
-  display: flex; }
-  label.select {
-    font-weight: 400;
-    font-size: 0.813rem;
-    position: relative;
-    display: inline-flex;
-    align-items: center; }
-
 p.error-message {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
