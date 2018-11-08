@@ -32,11 +32,6 @@
   opacity: .5;
 }
 
-.raa-button:disabled:hover {
-  background-color: #c94a18;
-  border-color: #c94a18;
-}
-
 .raa-button-secondary {
   background-color: #fff;
   color: #c94a18;
@@ -62,12 +57,6 @@
   opacity: .5;
 }
 
-.raa-button-secondary:disabled:hover {
-  background-color: #fff;
-  color: #c94a18;
-  border-color: #c94a18;
-}
-
 .raa-button-confirm {
   background-color: #008578;
   border-color: #008578;
@@ -88,11 +77,6 @@
   opacity: .5;
 }
 
-.raa-button-confirm:disabled:hover {
-  background-color: #008578;
-  border-color: #008578;
-}
-
 .raa-button-cancel {
   background-color: #6a6a6a;
   border-color: #6a6a6a;
@@ -111,11 +95,6 @@
 .raa-button-cancel:disabled {
   cursor: default;
   opacity: .5;
-}
-
-.raa-button-cancel:disabled:hover {
-  background-color: #6a6a6a;
-  border-color: #6a6a6a;
 }
 
 .raa-button-tabs {

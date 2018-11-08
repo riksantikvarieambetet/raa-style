@@ -9,12 +9,12 @@
 }
 
 .raa-link:hover {
-  @apply .tw-text-raa-orange-2;
-  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-2*/
+  @apply .tw-text-raa-orange-hover;
+  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
 }
 
 .raa-link:active {
-  @apply .tw-text-raa-orange-3 .tw-border-raa-orange-2;
+  @apply .tw-text-raa-orange-active .tw-border-raa-orange-active;
 }
 
 .raa-label {
@@ -94,7 +94,7 @@
     line-height: 1rem;
   }
 
-  /*// Mediumstora skärmar*/
+  /*Mediumstora skärmar*/
 
   @media only screen and (max-width: 1024px) {
     .hero {
@@ -133,7 +133,7 @@
     }
   }
 
-  /*// Små skärmar*/
+  /*Små skärmar*/
   @media only screen and (max-width: 520px) {
     .hero {
       font-size: 2.5rem;

@@ -48,19 +48,19 @@ const colors = {
   'raa-black-1': '#000000',
   'raa-black-2': '#3a3a3a',
   'raa-orange-1': '#C94A18',
-  'raa-orange-2': '#b54216', // Från styleguiden och bör gälla?
-  'raa-orange-3': '#a33b14', // Från styleguiden och bör gälla?
+  'raa-orange-hover': '#b54216',
+  'raa-orange-active': '#a33b14',
   'raa-gray-1': '#FBFBFB',
   'raa-gray-2': '#DADADA',
   'raa-gray-3': '#BABABA',
   'raa-gray-4': '#6A6A6A',
+  'raa-gray-hover': '#626665',
+  'raa-gray-active': '#565a59',
   'raa-gray-5': '#3A3A3A',
-  'raa-gray-6': '#626665', // Från styleguiden och bör gälla?
-  'raa-gray-7': '#565a59', // Från styleguiden och bör gälla?
   'raa-blue': '#00567E',
   'raa-green-1': '#008578',
-  'raa-green-2': '#00786c', // Från styleguiden och bör gälla?
-  'raa-green-3': '#006c61', // Från styleguiden och bör gälla?
+  'raa-green-hover': '#00786c',
+  'raa-green-active': '#006c61',
   'raa-error-red': '#DB0000',
   'raa-error-red-light': '#FCEBEB',
 };
@@ -102,7 +102,7 @@ module.exports = {
 
   screens: {
     sm: '520px',
-    md: '571px',
+    md: '570px',
     lg: '1025px',
   },
 
@@ -698,42 +698,6 @@ module.exports = {
     '50': '.5',
     '75': '.75',
     '100': '1',
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | SVG fill                                   https://tailwindcss.com/docs/svg
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your SVG fill colors. By default we just provide
-  | `fill-current` which sets the fill to the current text color. This lets you
-  | specify a fill color using existing text color utilities and helps keep the
-  | generated CSS file size down.
-  |
-  | Class name: .fill-{name}
-  |
-  */
-
-  svgFill: {
-    current: 'currentColor',
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | SVG stroke                                 https://tailwindcss.com/docs/svg
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your SVG stroke colors. By default we just provide
-  | `stroke-current` which sets the stroke to the current text color. This lets
-  | you specify a stroke color using existing text color utilities and helps
-  | keep the generated CSS file size down.
-  |
-  | Class name: .stroke-{name}
-  |
-  */
-
-  svgStroke: {
-    current: 'currentColor',
   },
 
   /*

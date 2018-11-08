@@ -18,19 +18,15 @@
 }
 
 .raa-button:hover {
-  @apply .tw-bg-raa-orange-2 .tw-border-raa-orange-2;
+  @apply .tw-bg-raa-orange-hover .tw-border-raa-orange-hover;
 }
 
 .raa-button:active {
-  @apply .tw-bg-raa-orange-3 .tw-border-raa-orange-3;
+  @apply .tw-bg-raa-orange-active .tw-border-raa-orange-active;
 }
 
 .raa-button:disabled {
   @apply .tw-cursor-default .tw-opacity-50;
-}
-
-.raa-button:disabled:hover {
-  @apply .tw-bg-raa-orange-1 .tw-border-raa-orange-1;
 }
 
 .raa-button-secondary {
@@ -38,19 +34,15 @@
 }
 
 .raa-button-secondary:hover {
-  @apply .tw-bg-raa-white .tw-text-raa-orange-2 .tw-border-raa-orange-2;
+  @apply .tw-bg-raa-white .tw-text-raa-orange-hover .tw-border-raa-orange-hover;
 }
 
 .raa-button-secondary:active {
-  @apply .tw-bg-raa-white .tw-text-raa-orange-3 .tw-border-raa-orange-3;
+  @apply .tw-bg-raa-white .tw-text-raa-orange-active .tw-border-raa-orange-active;
 }
 
 .raa-button-secondary:disabled {
   @apply .tw-cursor-default .tw-opacity-50;
-}
-
-.raa-button-secondary:disabled:hover {
-  @apply .tw-bg-raa-white .tw-text-raa-orange-1 .tw-border-raa-orange-1;
 }
 
 .raa-button-confirm {
@@ -58,19 +50,15 @@
 }
 
 .raa-button-confirm:hover {
-  @apply .tw-bg-raa-green-2 .tw-border-raa-green-2;
+  @apply .tw-bg-raa-green-hover .tw-border-raa-green-hover;
 }
 
 .raa-button-confirm:active {
-  @apply .tw-bg-raa-green-3 .tw-border-raa-green-3;
+  @apply .tw-bg-raa-green-active .tw-border-raa-green-active;
 }
 
 .raa-button-confirm:disabled {
   @apply .tw-cursor-default .tw-opacity-50;
-}
-
-.raa-button-confirm:disabled:hover {
-  @apply .tw-bg-raa-green-1 .tw-border-raa-green-1;
 }
 
 .raa-button-cancel {
@@ -78,19 +66,15 @@
 }
 
 .raa-button-cancel:hover {
-  @apply .tw-bg-raa-gray-6 .tw-border-raa-gray-6;
+  @apply .tw-bg-raa-gray-hover .tw-border-raa-gray-hover;
 }
 
 .raa-button-cancel:active {
-  @apply .tw-bg-raa-gray-7 .tw-border-raa-gray-7;
+  @apply .tw-bg-raa-gray-active .tw-border-raa-gray-active;
 }
 
 .raa-button-cancel:disabled {
   @apply .tw-cursor-default .tw-opacity-50;
-}
-
-.raa-button-cancel:disabled:hover {
-  @apply .tw-bg-raa-gray-4 .tw-border-raa-gray-4;
 }
 
 .raa-button-tabs {
