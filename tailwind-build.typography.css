@@ -1,13 +1,173 @@
 .raa-link {
-  @apply .tw-inline-block .tw-no-underline .tw-border-t-0 .tw-border-r-0 .tw-border-l-0 .tw-text-raa-orange-1 .tw-border-b .tw-border-transparent .tw-border-solid .tw-cursor-pointer;
+  @apply .tw-inline-block
+    .tw-text-raa-orange-1
+    .tw-underline
+    .tw-cursor-pointer;
   transition: all 0.4s;
   line-height: 0.1;
+  text-decoration-color: transparent;
 }
 
 .raa-link:hover {
-  @apply .tw-text-raa-orange-2 .tw-border-raa-orange-2;
+  @apply .tw-text-raa-orange-2;
+  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-2*/
 }
 
 .raa-link:active {
   @apply .tw-text-raa-orange-3 .tw-border-raa-orange-2;
+}
+
+.raa-label {
+  @apply .tw-flex .tw-font-semibold .tw-my-1 .tw-mx-0;
+}
+
+.raa-label.select {
+  @apply .tw-relative .tw-font-normal .tw-text-sm .tw-inline-flex .tw-items-center;
+}
+
+@responsive {
+  .raa-h1 {
+    @apply .tw-text-h1 .tw-leading-h1;
+  }
+
+  .raa-h2 {
+    @apply .tw-text-h2 .tw-leading-h2;
+  }
+
+  .raa-h3 {
+    @apply .tw-text-h3 .tw-leading-h3;
+  }
+
+  .raa-h4 {
+    @apply .tw-text-h4 .tw-leading-h4;
+  }
+
+  .raa-small {
+    @apply .tw-text-sm .tw-leading-sm;
+  }
+
+  .raa-large {
+    @apply .tw-text-lg .tw-leading-lg;
+  }
+}
+
+.raa-text-container {
+  /*Stora skärmar*/
+
+  .hero {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.125rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.813rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .large-text {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+  }
+
+  .small-text {
+    font-size: 0.813rem;
+    line-height: 1rem;
+  }
+
+  /*// Mediumstora skärmar*/
+
+  @media only screen and (max-width: 1024px) {
+    .hero {
+      font-size: 3.75rem;
+      line-height: 3.938rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 2.813rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+      line-height: 1.313rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.375rem;
+    }
+
+    .large-text {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+  }
+
+  /*// Små skärmar*/
+  @media only screen and (max-width: 520px) {
+    .hero {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.625rem;
+      line-height: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.375rem;
+      line-height: 1.563rem;
+    }
+
+    h4 {
+      font-size: 1.125rem;
+      line-height: 1.188rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+
+    .large-text {
+      font-size: 1.375rem;
+      line-height: 1.563rem;
+    }
+  }
 }

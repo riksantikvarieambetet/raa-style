@@ -1141,16 +1141,31 @@
   height: 100vh; }
 
 .tw-leading-none {
-  line-height: 1; }
+  line-height: 1rem; }
 
-.tw-leading-tight {
-  line-height: 1.25; }
+.tw-leading-sm {
+  line-height: .813rem; }
 
 .tw-leading-normal {
-  line-height: 1.5; }
+  line-height: 1.375rem; }
 
-.tw-leading-loose {
-  line-height: 2; }
+.tw-leading-h4 {
+  line-height: 1.313rem; }
+
+.tw-leading-h3 {
+  line-height: 1.875rem; }
+
+.tw-leading-lg {
+  line-height: 1.875rem; }
+
+.tw-leading-h2 {
+  line-height: 2.813rem; }
+
+.tw-leading-h1 {
+  line-height: 3.125rem; }
+
+.tw-leading-hero {
+  line-height: 5rem; }
 
 .tw-m-0 {
   margin: 0; }
@@ -2713,17 +2728,23 @@
 .tw-text-base {
   font-size: 1rem; }
 
-.tw-text-lg {
-  font-size: 1.313rem; }
+.tw-text-h4 {
+  font-size: 1.125rem; }
 
-.tw-text-header {
+.tw-text-lg {
   font-size: 1.75rem; }
 
-.tw-text-title {
+.tw-text-h3 {
+  font-size: 1.75rem; }
+
+.tw-text-h2 {
   font-size: 2.25rem; }
 
+.tw-text-h1 {
+  font-size: 3rem; }
+
 .tw-text-hero {
-  font-size: 3.74rem; }
+  font-size: 5rem; }
 
 .tw-italic {
   font-style: italic; }
@@ -3758,13 +3779,23 @@
   .sm\:tw-h-screen {
     height: 100vh; }
   .sm\:tw-leading-none {
-    line-height: 1; }
-  .sm\:tw-leading-tight {
-    line-height: 1.25; }
+    line-height: 1rem; }
+  .sm\:tw-leading-sm {
+    line-height: .813rem; }
   .sm\:tw-leading-normal {
-    line-height: 1.5; }
-  .sm\:tw-leading-loose {
-    line-height: 2; }
+    line-height: 1.375rem; }
+  .sm\:tw-leading-h4 {
+    line-height: 1.313rem; }
+  .sm\:tw-leading-h3 {
+    line-height: 1.875rem; }
+  .sm\:tw-leading-lg {
+    line-height: 1.875rem; }
+  .sm\:tw-leading-h2 {
+    line-height: 2.813rem; }
+  .sm\:tw-leading-h1 {
+    line-height: 3.125rem; }
+  .sm\:tw-leading-hero {
+    line-height: 5rem; }
   .sm\:tw-m-0 {
     margin: 0; }
   .sm\:tw-m-1 {
@@ -4831,14 +4862,18 @@
     font-size: .813rem; }
   .sm\:tw-text-base {
     font-size: 1rem; }
+  .sm\:tw-text-h4 {
+    font-size: 1.125rem; }
   .sm\:tw-text-lg {
-    font-size: 1.313rem; }
-  .sm\:tw-text-header {
     font-size: 1.75rem; }
-  .sm\:tw-text-title {
+  .sm\:tw-text-h3 {
+    font-size: 1.75rem; }
+  .sm\:tw-text-h2 {
     font-size: 2.25rem; }
+  .sm\:tw-text-h1 {
+    font-size: 3rem; }
   .sm\:tw-text-hero {
-    font-size: 3.74rem; }
+    font-size: 5rem; }
   .sm\:tw-italic {
     font-style: italic; }
   .sm\:tw-roman {
@@ -5771,13 +5806,23 @@
   .md\:tw-h-screen {
     height: 100vh; }
   .md\:tw-leading-none {
-    line-height: 1; }
-  .md\:tw-leading-tight {
-    line-height: 1.25; }
+    line-height: 1rem; }
+  .md\:tw-leading-sm {
+    line-height: .813rem; }
   .md\:tw-leading-normal {
-    line-height: 1.5; }
-  .md\:tw-leading-loose {
-    line-height: 2; }
+    line-height: 1.375rem; }
+  .md\:tw-leading-h4 {
+    line-height: 1.313rem; }
+  .md\:tw-leading-h3 {
+    line-height: 1.875rem; }
+  .md\:tw-leading-lg {
+    line-height: 1.875rem; }
+  .md\:tw-leading-h2 {
+    line-height: 2.813rem; }
+  .md\:tw-leading-h1 {
+    line-height: 3.125rem; }
+  .md\:tw-leading-hero {
+    line-height: 5rem; }
   .md\:tw-m-0 {
     margin: 0; }
   .md\:tw-m-1 {
@@ -6844,14 +6889,18 @@
     font-size: .813rem; }
   .md\:tw-text-base {
     font-size: 1rem; }
+  .md\:tw-text-h4 {
+    font-size: 1.125rem; }
   .md\:tw-text-lg {
-    font-size: 1.313rem; }
-  .md\:tw-text-header {
     font-size: 1.75rem; }
-  .md\:tw-text-title {
+  .md\:tw-text-h3 {
+    font-size: 1.75rem; }
+  .md\:tw-text-h2 {
     font-size: 2.25rem; }
+  .md\:tw-text-h1 {
+    font-size: 3rem; }
   .md\:tw-text-hero {
-    font-size: 3.74rem; }
+    font-size: 5rem; }
   .md\:tw-italic {
     font-style: italic; }
   .md\:tw-roman {
@@ -7784,13 +7833,23 @@
   .lg\:tw-h-screen {
     height: 100vh; }
   .lg\:tw-leading-none {
-    line-height: 1; }
-  .lg\:tw-leading-tight {
-    line-height: 1.25; }
+    line-height: 1rem; }
+  .lg\:tw-leading-sm {
+    line-height: .813rem; }
   .lg\:tw-leading-normal {
-    line-height: 1.5; }
-  .lg\:tw-leading-loose {
-    line-height: 2; }
+    line-height: 1.375rem; }
+  .lg\:tw-leading-h4 {
+    line-height: 1.313rem; }
+  .lg\:tw-leading-h3 {
+    line-height: 1.875rem; }
+  .lg\:tw-leading-lg {
+    line-height: 1.875rem; }
+  .lg\:tw-leading-h2 {
+    line-height: 2.813rem; }
+  .lg\:tw-leading-h1 {
+    line-height: 3.125rem; }
+  .lg\:tw-leading-hero {
+    line-height: 5rem; }
   .lg\:tw-m-0 {
     margin: 0; }
   .lg\:tw-m-1 {
@@ -8857,14 +8916,18 @@
     font-size: .813rem; }
   .lg\:tw-text-base {
     font-size: 1rem; }
+  .lg\:tw-text-h4 {
+    font-size: 1.125rem; }
   .lg\:tw-text-lg {
-    font-size: 1.313rem; }
-  .lg\:tw-text-header {
     font-size: 1.75rem; }
-  .lg\:tw-text-title {
+  .lg\:tw-text-h3 {
+    font-size: 1.75rem; }
+  .lg\:tw-text-h2 {
     font-size: 2.25rem; }
+  .lg\:tw-text-h1 {
+    font-size: 3rem; }
   .lg\:tw-text-hero {
-    font-size: 3.74rem; }
+    font-size: 5rem; }
   .lg\:tw-italic {
     font-style: italic; }
   .lg\:tw-roman {

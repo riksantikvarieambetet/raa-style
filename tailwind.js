@@ -174,12 +174,14 @@ module.exports = {
   */
 
   textSizes: {
-    sm: '.813rem', // 13px
-    base: '1rem', // 16px
-    lg: '1.313rem', // 21px
-    header: '1.75rem', // 28px
-    title: '2.25rem', // 36px
-    hero: '3.74rem', // 60px
+    sm: '.813rem',
+    base: '1rem',
+    h4: '1.125rem',
+    lg: '1.75rem',
+    h3: '1.75rem',
+    h2: '2.25rem',
+    h1: '3rem',
+    hero: '5rem',
   },
 
   /*
@@ -214,10 +216,15 @@ module.exports = {
   */
 
   leading: {
-    none: 1,
-    tight: 1.25,
-    normal: 1.5,
-    loose: 2,
+    none: '1rem',
+    sm: '0.813rem',
+    normal: '1.375rem',
+    h4: '1.313rem',
+    h3: '1.875rem',
+    lg: '1.875rem',
+    h2: '2.813rem',
+    h1: '3.125rem',
+    hero: '5rem',
   },
 
   /*
