@@ -1,6 +1,6 @@
 {
   "name": "raa-style",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på http://styleguide.raa.se/.",
   "main": "",
   "scripts": {
@@ -12,7 +12,11 @@
     "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
     "build:list-icons": "node list-icons.js",
     "build:copy-assets": "cp -R assets dist/",
-    "tailwind": "./node_modules/.bin/tailwind build ./tailwind-build.css -c ./tailwind.js -o ./src/_raa-tailwind.scss",
+    "tailwind": "yarn tailwind:core && yarn tailwind:button && yarn tailwind:typography && yarn tailwind:input",
+    "tailwind:core": "./node_modules/.bin/tailwind build ./tailwind-build.css -c ./tailwind.js -o ./src/raa-tailwind.scss",
+    "tailwind:button": "./node_modules/.bin/tailwind build ./tailwind-build.button.css -c ./tailwind.js -o ./src/raa-tailwind.button.scss",
+    "tailwind:typography": "./node_modules/.bin/tailwind build ./tailwind-build.typography.css -c ./tailwind.js -o ./src/raa-tailwind.typography.scss",
+    "tailwind:input": "./node_modules/.bin/tailwind build ./tailwind-build.input.css -c ./tailwind.js -o ./src/raa-tailwind.input.scss",
     "prepublish": "npm run clean && npm run build",
     "precommit": "pretty-quick --staged"
   },

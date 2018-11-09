@@ -1,7 +1,8 @@
+@import 'raa-normalize';
 @import 'raa-tailwind';
-@import 'buttons';
-@import 'color-classes';
+@import 'raa-tailwind.button';
+@import 'raa-tailwind.typography';
+@import 'raa-tailwind.input';
 @import 'colors';
 @import 'icons';
 @import 'media-queries';
-@import 'typography';

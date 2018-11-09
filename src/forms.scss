@@ -1,41 +1,9 @@
 @import 'colors';
 
-label {
-  font-weight: 600;
-  margin: 0.25rem 0;
-  display: flex;
-
-  &.select {
-    font-weight: 400;
-    font-size: 0.813rem;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-  }
-}
-
 p.error-message {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
   color: $raa-error-red;
-}
-
-input[type='text'],
-input[type='email'],
-input[type='tel'],
-textarea,
-select {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid $raa-gray-3;
-  border-radius: 2px;
-  background-color: white;
-
-  &.ng-invalid.ng-dirty {
-    background-color: $raa-error-red-light;
-  }
 }
 
 [id^='raa-checkbox'] {
@@ -87,6 +55,6 @@ select {
 }
 
 select {
-    appearance: none; 
-    background: transparent url("/assets/images/arrow.png") no-repeat calc(100% - 1rem) center;
+  appearance: none;
+  background: transparent url('/assets/images/arrow.png') no-repeat calc(100% - 1rem) center;
 }
