@@ -10,6 +10,6 @@
   box-sizing: border-box;
 }
 
-.raa-input.ng-invalid.ng-dirty {
+.raa-input-error {
   @apply .tw-bg-raa-error-red-light;
 }

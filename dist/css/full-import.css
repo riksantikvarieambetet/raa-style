@@ -9875,7 +9875,7 @@ p,
   background-color: #fff;
   box-sizing: border-box; }
 
-.raa-input.ng-invalid.ng-dirty {
+.raa-input-error {
   background-color: #fcebeb; }
 
 @font-face {
