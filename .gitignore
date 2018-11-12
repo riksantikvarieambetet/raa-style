@@ -5,6 +5,9 @@ npm-debug.log
 
 # Tailwind generated css
 /src/raa-tailwind.scss
+/src/raa-tailwind.button.scss
+/src/raa-tailwind.input.scss
+/src/raa-tailwind.typography.scss
 
 # IDEs och editorer
 /.idea

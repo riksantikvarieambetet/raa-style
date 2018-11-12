@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && node-sass -w src --output dist/css",
     "clean": "rm -Rf dist",
-    "build": "npm run tailwind && npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-assets",
+    "build": "npm run tailwind && npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-assets && npm run build:copy-tailwind-config",
     "build:copy-tailwind-config": "cp ./tailwind.js dist/",
     "build:css": "node-sass src --output dist/css",
     "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
