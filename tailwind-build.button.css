@@ -62,7 +62,7 @@
 }
 
 .raa-button-cancel {
-  @apply .tw-bg-raa-gray-4 .tw-border-raa-gray-4;
+  @apply .tw-bg-raa-gray-5 .tw-border-raa-gray-5;
 }
 
 .raa-button-cancel:hover {
