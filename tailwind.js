@@ -331,8 +331,8 @@ module.exports = {
   |
   */
 
-  // Defaultar till raa-styles färg, raa-grey-5
-  borderColors: global.Object.assign({ default: colors['raa-grey-5'] }, colors),
+  // Defaultar till raa-styles färg, raa-gray-6
+  borderColors: global.Object.assign({ default: colors['raa-gray-6'] }, colors),
 
   /*
   |-----------------------------------------------------------------------------
