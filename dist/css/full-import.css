@@ -9788,7 +9788,7 @@ p,
   text-decoration: underline;
   cursor: pointer;
   transition: all .4s;
-  line-height: .1;
+  line-height: 1.5;
   text-decoration-color: transparent; }
 
 .raa-link:hover {
@@ -9796,9 +9796,18 @@ p,
   text-decoration-color: #b54216;
   /*Färg = tw-text-raa-orange-hover*/ }
 
+.raa-link.text-decoration-inherit-color:hover {
+  text-decoration-color: inherit; }
+
 .raa-link:active {
   color: #a33b14;
   border-color: #a33b14; }
+
+/*Tar bort underline under ikon som ligger i länkar och centrerar den*/
+.raa-link .raa-icon {
+  display: inline-block;
+  position: relative;
+  top: .1em; }
 
 .raa-label {
   display: flex;
@@ -9976,6 +9985,7 @@ p,
   display: block;
   width: 100%;
   padding: .75rem;
+  height: 2.5rem;
   border-width: 1px;
   border-style: solid;
   border-color: #dadada;
@@ -9983,7 +9993,12 @@ p,
   background-color: #fff;
   box-sizing: border-box; }
 
-.raa-input-error {
+.raa-input::-ms-clear {
+  /*Tar bort 'X' från IE11*/
+  width: 0;
+  height: 0; }
+
+.raa-input.error {
   background-color: #fcebeb; }
 
 @font-face {

@@ -4,7 +4,7 @@
   text-decoration: underline;
   cursor: pointer;
   transition: all .4s;
-  line-height: .1;
+  line-height: 1.5;
   text-decoration-color: transparent;
 }
 
@@ -13,9 +13,21 @@
   text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
 }
 
+.raa-link.text-decoration-inherit-color:hover {
+  text-decoration-color: inherit;
+}
+
 .raa-link:active {
   color: #a33b14;
   border-color: #a33b14;
+}
+
+/*Tar bort underline under ikon som ligger i länkar och centrerar den*/
+
+.raa-link .raa-icon {
+  display: inline-block;
+  position: relative;
+  top: .1em;
 }
 
 .raa-label {
