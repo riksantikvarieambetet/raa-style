@@ -51,12 +51,13 @@ const colors = {
   'raa-orange-hover': '#b54216',
   'raa-orange-active': '#a33b14',
   'raa-gray-1': '#FBFBFB',
-  'raa-gray-2': '#DADADA',
-  'raa-gray-3': '#BABABA',
-  'raa-gray-4': '#6A6A6A',
+  'raa-gray-2': '#F4F4F4',
+  'raa-gray-3': '#DADADA',
+  'raa-gray-4': '#BABABA',
+  'raa-gray-5': '#6A6A6A',
   'raa-gray-hover': '#626665',
   'raa-gray-active': '#565a59',
-  'raa-gray-5': '#3A3A3A',
+  'raa-gray-6': '#3A3A3A',
   'raa-blue': '#00567E',
   'raa-green-1': '#008578',
   'raa-green-hover': '#00786c',
@@ -330,8 +331,8 @@ module.exports = {
   |
   */
 
-  // Defaultar till raa-styles färg, raa-grey-5
-  borderColors: global.Object.assign({ default: colors['raa-grey-5'] }, colors),
+  // Defaultar till raa-styles färg, raa-gray-6
+  borderColors: global.Object.assign({ default: colors['raa-gray-6'] }, colors),
 
   /*
   |-----------------------------------------------------------------------------
