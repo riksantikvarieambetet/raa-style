@@ -3,6 +3,9 @@
   "version": "4.0.0",
   "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på http://styleguide.raa.se/.",
   "main": "",
+  "publishConfig": {
+    "registry": "http://pl-sinopia01.raa.se:8080"
+  },
   "scripts": {
     "start": "npm run build && node-sass -w src --output dist/css",
     "clean": "rm -Rf dist",
