@@ -9688,7 +9688,7 @@ p,
   font-family: 'Source Sans Pro', sans-serif;
   transition: background-color, border-color .4s;
   box-sizing: border-box;
-  min-width: 8rem;
+  min-width: 6.25rem;
   letter-spacing: .2px;
   border: none; }
 
@@ -9991,6 +9991,7 @@ p,
   border-color: #dadada;
   border-radius: 2px;
   background-color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box; }
 
 .raa-input::-ms-clear {
