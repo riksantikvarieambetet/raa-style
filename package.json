@@ -20,7 +20,9 @@
     "tailwind:button": "./node_modules/.bin/tailwind build ./tailwind-build.button.css -c ./tailwind.js -o ./src/raa-tailwind.button.scss",
     "tailwind:typography": "./node_modules/.bin/tailwind build ./tailwind-build.typography.css -c ./tailwind.js -o ./src/raa-tailwind.typography.scss",
     "tailwind:input": "./node_modules/.bin/tailwind build ./tailwind-build.input.css -c ./tailwind.js -o ./src/raa-tailwind.input.scss",
-    "prepublish": "npm run clean && npm run build",
+    "publish:patch": "node publishNewVersion --patch",
+    "publish:minor": "node publishNewVersion --minor",
+    "publish:major": "node publishNewVersion --major",
     "precommit": "pretty-quick --staged"
   },
   "repository": "http://stash.raa.se/projects/GRAP/repos/raa-style/browse",
