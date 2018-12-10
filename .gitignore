@@ -2,6 +2,7 @@ node_modules
 
 yarn-error.log
 npm-debug.log
+publishNewVersion.log
 
 # Tailwind generated css
 /src/raa-tailwind.scss
