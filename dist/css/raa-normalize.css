@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -6,7 +7,6 @@
      * 2. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 html {
   line-height: 1.15;
   /* 1 */
@@ -404,7 +404,6 @@ template {
   display: none; }
 
 body {
-  /* prettier-ignore */
   font-size: 16px;
   font-weight: normal;
   font-family: 'Source Sans Pro', sans-serif;
