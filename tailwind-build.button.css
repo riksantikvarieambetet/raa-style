@@ -1,5 +1,5 @@
 .raa-button {
-  @apply .tw-bg-raa-orange-1
+  @apply .tw-bg-raa-orange
     .tw-cursor-pointer
     .tw-text-raa-white
     .tw-uppercase
@@ -30,7 +30,7 @@
 }
 
 .raa-button-secondary {
-  @apply .tw-bg-raa-white .tw-text-raa-orange-1 .tw-border-raa-orange-1 .tw-border-2 .tw-border-solid;
+  @apply .tw-bg-raa-white .tw-text-raa-orange .tw-border-raa-orange .tw-border-2 .tw-border-solid;
 }
 
 .raa-button-secondary:hover {
@@ -46,7 +46,7 @@
 }
 
 .raa-button-confirm {
-  @apply .tw-bg-raa-green-1 .tw-border-raa-green-1;
+  @apply .tw-bg-raa-green .tw-border-raa-green;
 }
 
 .raa-button-confirm:hover {
@@ -92,7 +92,7 @@
 }
 
 .raa-button-tabs .raa-button.active {
-  @apply .tw-text-raa-orange-1 .tw-bg-raa-white .tw-border-raa-orange-1 .tw-border-2 .tw-border-solid;
+  @apply .tw-text-raa-orange .tw-bg-raa-white .tw-border-raa-orange .tw-border-2 .tw-border-solid;
   box-sizing: border-box;
   border-bottom: none;
 }
