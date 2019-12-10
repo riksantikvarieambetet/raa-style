@@ -1,7 +1,7 @@
 p.error-message {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  color: #DB0000; }
+  color: #db0000; }
 
 [id^='raa-checkbox'] {
   display: none !important; }
@@ -14,7 +14,7 @@ p.error-message {
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: '#6A6A6A;'; }
+  color: #6a6a6a; }
 
 [type='checkbox']:checked + [for^='raa-checkbox']:before {
   background: white;
@@ -35,7 +35,7 @@ p.error-message {
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: '#6A6A6A'; }
+  color: #6a6a6a; }
 
 [type='radio']:checked + [for^='raa-radiobutton']:before {
   background: white;
