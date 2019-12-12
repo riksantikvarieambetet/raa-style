@@ -47,7 +47,7 @@ const colors = {
   'raa-white': '#ffffff',
   'raa-black-1': '#000000',
   'raa-black-2': '#3a3a3a',
-  'raa-orange-1': '#C94A18',
+  'raa-orange': '#C94A18',
   'raa-orange-hover': '#b54216',
   'raa-orange-active': '#a33b14',
   'raa-gray-1': '#FBFBFB',

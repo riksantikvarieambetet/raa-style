@@ -14,7 +14,7 @@ p.error-message {
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: #3a3a3a; }
+  color: #6a6a6a; }
 
 [type='checkbox']:checked + [for^='raa-checkbox']:before {
   background: white;
@@ -35,7 +35,7 @@ p.error-message {
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: #3a3a3a; }
+  color: #6a6a6a; }
 
 [type='radio']:checked + [for^='raa-radiobutton']:before {
   background: white;

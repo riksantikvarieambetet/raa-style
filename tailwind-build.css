@@ -25,3 +25,4 @@
  * @import "tailwindcss/utilities";
  */
 @tailwind utilities;
+@tailwind base;
