@@ -12,11 +12,13 @@ p.error-message {
   font-family: 'Source Sans Pro', 'raa-icons';
   content: '\e949';
   position: relative;
+  top: 0.2rem;
   margin-right: 0.5rem;
   height: 1.25rem;
   background: white;
   font-size: 1.25rem;
-  color: #6a6a6a;
+  color: #3a3a3a;
+  font-weight: 600;
 }
 
 [type='checkbox']:checked + [for^='raa-checkbox']:before {
@@ -36,20 +38,24 @@ p.error-message {
   font-family: 'Source Sans Pro', 'raa-icons';
   content: '\e941';
   position: relative;
+  top: 0.2rem;
   margin-right: 0.5rem;
-  height: 1.25rem;
-  background: white;
   font-size: 1.25rem;
-  color: #6a6a6a;
+  color: #3a3a3a;
+  font-weight: 600;
 }
 
 [type='radio']:checked + [for^='raa-radiobutton']:before {
-  background: white;
   font-family: 'Source Sans Pro', 'raa-icons';
   content: '\e940';
   transition: all 0.2s;
   font-size: 1.25rem;
   // color: $raa-green;
+}
+
+input[type='radio']{   
+  display: table-cell;
+  vertical-align: top;
 }
 
 select {
