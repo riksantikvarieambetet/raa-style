@@ -50,7 +50,7 @@
 
 .raa-menu-text {
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
   color: #C94A18;
 }
@@ -67,7 +67,7 @@
 
 .raa-warning-text {
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.25rem;
   color: #DB0000;
 }
 
@@ -119,7 +119,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.25rem;
 }
 
 .raa-large-text {
@@ -129,11 +129,12 @@ p {
 
 .raa-small-text {
   font-size: 0.8125rem;
-  line-height: 1rem;
+  line-height: 1.125rem;
 }
 
 .raa-secondary-text {
   font-size: 0.8125rem;
+  line-height: 1.125rem;
   color: #6A6A6A;
 }
 
@@ -185,6 +186,17 @@ p {
     line-height: 1.313rem;
   }
 
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .raa-warning-text {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #DB0000;
+  }
+
   .large-text {
     font-size: 1.313rem;
     line-height: 1.75rem;
@@ -203,7 +215,7 @@ p {
   }
 
   .lg\:tw-text-size-h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   .lg\:tw-text-size-h3 {
@@ -225,8 +237,8 @@ p {
   }
 
   h2 {
-    font-size: 2.25rem;
-    line-height: 2.813rem;
+    font-size: 3rem;
+    line-height: 3.125rem;
   }
 
   h3 {
@@ -237,6 +249,17 @@ p {
   h4 {
     font-size: 1.125rem;
     line-height: 1.313rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .raa-warning-text {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #DB0000;
   }
 
   .large-text {
