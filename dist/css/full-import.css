@@ -12772,9 +12772,9 @@ video {
   background-color: #ffffff;
   border-color: #C94A18;
   border-width: 2px;
+  border-bottom-width: 0;
   border-style: solid;
-  box-sizing: border-box;
-  border-bottom: none; }
+  box-sizing: border-box; }
 
 .raa-link {
   display: inline-block;

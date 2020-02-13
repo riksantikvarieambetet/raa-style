@@ -92,7 +92,6 @@
 }
 
 .raa-button-tabs .raa-button.active {
-  @apply .tw-text-raa-orange .tw-bg-raa-white .tw-border-raa-orange .tw-border-2 .tw-border-solid;
+  @apply .tw-text-raa-orange .tw-bg-raa-white .tw-border-raa-orange .tw-border-2 .tw-border-b-0 .tw-border-solid;
   box-sizing: border-box;
-  border-bottom: none;
 }
