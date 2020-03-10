@@ -11,8 +11,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       'raa-white': '#ffffff',
-      'raa-black-1': '#000000',
-      'raa-black-2': '#3a3a3a',
+      'raa-black': '#000000',
       'raa-orange': '#C94A18',
       'raa-orange-hover': '#b54216',
       'raa-orange-active': '#a33b14',
