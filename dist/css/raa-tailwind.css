@@ -9,9 +9,9 @@
   .tw-container {
     max-width: 570px; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .tw-container {
-    max-width: 1024px; } }
+    max-width: 1025px; } }
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -14401,7 +14401,7 @@ video {
   .md\:tw-duration-1000 {
     transition-duration: 1000ms; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .lg\:tw-sr-only {
     position: absolute;
     width: 1px;
