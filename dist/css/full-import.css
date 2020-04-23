@@ -431,9 +431,9 @@ p,
   .tw-container {
     max-width: 570px; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .tw-container {
-    max-width: 1024px; } }
+    max-width: 1025px; } }
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -14823,7 +14823,7 @@ video {
   .md\:tw-duration-1000 {
     transition-duration: 1000ms; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .lg\:tw-sr-only {
     position: absolute;
     width: 1px;
@@ -19150,7 +19150,8 @@ p {
   src: url("../assets/icons/fonts/raa-icons.eot");
   src: url("../assets/icons/fonts/raa-icons.eot") format("embedded-opentype"), url("../assets/icons/fonts/raa-icons.woff") format("woff"), url("../assets/icons/fonts/raa-icons.svg") format("svg"), url("../assets/icons/fonts/raa-icons.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: block; }
 
 [class^='raa-icon-'],
 [class*=' raa-icon-'] {
@@ -19166,12 +19167,6 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.raa-icon-radiobutton-selected:before {
-  content: '\e940'; }
-
-.raa-icon-radiobutton-unselected:before {
-  content: '\e941'; }
-
 .raa-icon-lock-closed:before {
   content: '\e943'; }
 
@@ -19180,12 +19175,6 @@ p {
 
 .raa-icon-refresh:before {
   content: '\e946'; }
-
-.raa-icon-checkbox-selected:before {
-  content: '\e948'; }
-
-.raa-icon-checkbox-unselected:before {
-  content: '\e949'; }
 
 .raa-icon-file:before {
   content: '\e94a'; }
@@ -19364,12 +19353,6 @@ p {
 .raa-icon-label:before {
   content: '\e92e'; }
 
-.raa-icon-like-selected:before {
-  content: '\e92f'; }
-
-.raa-icon-like-unselected:before {
-  content: '\e930'; }
-
 .raa-icon-list:before {
   content: '\e931'; }
 
@@ -19402,3 +19385,6 @@ p {
 
 .raa-icon-navigator:before {
   content: '\e94e'; }
+
+.raa-icon-compass:before {
+  content: '\e92f'; }

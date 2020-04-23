@@ -16,6 +16,7 @@ $raa-style-font-path: '..' !default;
     url('#{$raa-style-font-path}/assets/icons/fonts/raa-icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^='raa-icon-'],
@@ -34,12 +35,6 @@ $raa-style-font-path: '..' !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.raa-icon-radiobutton-selected:before {
-  content: '\e940';
-}
-.raa-icon-radiobutton-unselected:before {
-  content: '\e941';
-}
 .raa-icon-lock-closed:before {
   content: '\e943';
 }
@@ -48,12 +43,6 @@ $raa-style-font-path: '..' !default;
 }
 .raa-icon-refresh:before {
   content: '\e946';
-}
-.raa-icon-checkbox-selected:before {
-  content: '\e948';
-}
-.raa-icon-checkbox-unselected:before {
-  content: '\e949';
 }
 .raa-icon-file:before {
   content: '\e94a';
@@ -232,12 +221,6 @@ $raa-style-font-path: '..' !default;
 .raa-icon-label:before {
   content: '\e92e';
 }
-.raa-icon-like-selected:before {
-  content: '\e92f';
-}
-.raa-icon-like-unselected:before {
-  content: '\e930';
-}
 .raa-icon-list:before {
   content: '\e931';
 }
@@ -270,4 +253,7 @@ $raa-style-font-path: '..' !default;
 }
 .raa-icon-navigator:before {
   content: '\e94e';
+}
+.raa-icon-compass:before {
+  content: '\e92f';
 }
