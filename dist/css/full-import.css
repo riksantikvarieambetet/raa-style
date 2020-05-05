@@ -19086,7 +19086,7 @@ p {
     font-size: 1.313rem;
     line-height: 1.75rem; } }
 
-/*Små skärmar*/
+/*Stora skärmar*/
 @media only screen and (min-width: 1024px) {
   .lg\:tw-text-size-hero {
     font-size: 5rem; }
@@ -19105,8 +19105,8 @@ p {
     font-size: 3rem;
     line-height: 3.125rem; }
   h2 {
-    font-size: 3rem;
-    line-height: 3.125rem; }
+    font-size: 2.25rem;
+    line-height: 2.813rem; }
   h3 {
     font-size: 1.75rem;
     line-height: 1.875rem; }
