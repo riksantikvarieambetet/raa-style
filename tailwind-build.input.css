@@ -22,3 +22,7 @@
 .raa-input.error {
   @apply .tw-bg-raa-error-red-light;
 }
+
+.raa-input:focus {
+  @apply .tw-shadow-outline .tw-outline-transparent;
+}

@@ -8,13 +8,19 @@
   text-decoration-color: transparent;
 }
 
-.raa-link:hover {
-  color: #b54216;
-  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
+.raa-link:focus {
+  background-color: #C94A18;
+  color: #ffffff;
+  outline: 2px dotted transparent;
+  text-decoration: underline
 }
 
-.raa-link.text-decoration-inherit-color:hover {
-  text-decoration-color: inherit;
+.raa-link:hover {
+  text-decoration: underline;
+  color: #b54216;
+  background-color: #ffffff;
+  color: #C94A18;
+  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
 }
 
 .raa-link:active {
@@ -25,7 +31,6 @@
 /*Tar bort underline under ikon som ligger i länkar och centrerar den*/
 
 .raa-link .raa-icon {
-  color: #C94A18;
   display: inline-block;
   position: relative;
   top: 0.1em;

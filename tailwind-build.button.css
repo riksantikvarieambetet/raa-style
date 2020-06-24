@@ -21,8 +21,8 @@
   @apply .tw-bg-raa-orange-hover .tw-border-raa-orange-hover;
 }
 
-.raa-button:active {
-  @apply .tw-bg-raa-orange-active .tw-border-raa-orange-active;
+.raa-button:focus {
+  @apply .tw-shadow-outline .tw-outline-transparent;
 }
 
 .raa-button:disabled {

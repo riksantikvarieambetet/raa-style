@@ -20,9 +20,9 @@
   background-color: #b54216;
   border-color: #b54216; }
 
-.raa-button:active {
-  background-color: #a33b14;
-  border-color: #a33b14; }
+.raa-button:focus {
+  box-shadow: 0 0 0 3px #ffb219;
+  outline: 2px dotted transparent; }
 
 .raa-button:disabled {
   cursor: default;
