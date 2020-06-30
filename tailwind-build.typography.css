@@ -9,11 +9,11 @@
 }
 
 .raa-link:focus {
-  @apply .tw-bg-raa-orange .tw-text-raa-white .tw-outline-transparent .tw-underline;
+  @apply .tw-underline .tw-bg-raa-orange .tw-text-raa-white .tw-outline-transparent;
 }
 
 .raa-link:hover {
-  @apply .tw-underline .tw-text-raa-orange-hover .tw-bg-raa-white .tw-text-raa-orange;
+  @apply .tw-underline .tw-text-raa-orange-hover .tw-bg-transparent .tw-text-raa-orange;
   text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
 }
 

@@ -17,14 +17,19 @@
   border: none;
 }
 
-.raa-button:hover {
+.raa-button:hover:not([disabled]) {
   background-color: #b54216;
   border-color: #b54216;
 }
 
 .raa-button:focus {
-  box-shadow: 0 0 0 3px rgb(255,178,25);
-  outline: 2px dotted transparent
+  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  outline: 2px dotted transparent;
+}
+
+.raa-button-focus:focus {
+  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  outline: 2px dotted transparent;
 }
 
 .raa-button:disabled {
@@ -40,7 +45,7 @@
   border-style: solid;
 }
 
-.raa-button-secondary:hover {
+.raa-button-secondary:hover:not([disabled]) {
   background-color: #ffffff;
   color: #b54216;
   border-color: #b54216;
@@ -62,7 +67,7 @@
   border-color: #008578;
 }
 
-.raa-button-confirm:hover {
+.raa-button-confirm:hover:not([disabled]) {
   background-color: #00786c;
   border-color: #00786c;
 }
@@ -82,7 +87,7 @@
   border-color: #6A6A6A;
 }
 
-.raa-button-cancel:hover {
+.raa-button-cancel:hover:not([disabled]) {
   background-color: #626665;
   border-color: #626665;
 }

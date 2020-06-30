@@ -21,5 +21,5 @@
   background-color: #FCEBEB; }
 
 .raa-input:focus {
-  box-shadow: 0 0 0 3px #ffb219;
+  box-shadow: 0 0 0.1px 3px #ffb219;
   outline: 2px dotted transparent; }

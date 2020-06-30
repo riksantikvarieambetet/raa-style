@@ -17,11 +17,15 @@
   border: none;
 }
 
-.raa-button:hover {
+.raa-button:hover:not([disabled]) {
   @apply .tw-bg-raa-orange-hover .tw-border-raa-orange-hover;
 }
 
 .raa-button:focus {
+  @apply .tw-shadow-outline .tw-outline-transparent;
+}
+
+.raa-button-focus:focus {
   @apply .tw-shadow-outline .tw-outline-transparent;
 }
 
@@ -33,7 +37,7 @@
   @apply .tw-bg-raa-white .tw-text-raa-orange .tw-border-raa-orange .tw-border-2 .tw-border-solid;
 }
 
-.raa-button-secondary:hover {
+.raa-button-secondary:hover:not([disabled]) {
   @apply .tw-bg-raa-white .tw-text-raa-orange-hover .tw-border-raa-orange-hover;
 }
 
@@ -49,7 +53,7 @@
   @apply .tw-bg-raa-green .tw-border-raa-green;
 }
 
-.raa-button-confirm:hover {
+.raa-button-confirm:hover:not([disabled]) {
   @apply .tw-bg-raa-green-hover .tw-border-raa-green-hover;
 }
 
@@ -65,7 +69,7 @@
   @apply .tw-bg-raa-gray-5 .tw-border-raa-gray-5;
 }
 
-.raa-button-cancel:hover {
+.raa-button-cancel:hover:not([disabled]) {
   @apply .tw-bg-raa-gray-hover .tw-border-raa-gray-hover;
 }
 

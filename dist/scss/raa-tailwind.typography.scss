@@ -9,16 +9,16 @@
 }
 
 .raa-link:focus {
+  text-decoration: underline;
   background-color: #C94A18;
   color: #ffffff;
   outline: 2px dotted transparent;
-  text-decoration: underline
 }
 
 .raa-link:hover {
   text-decoration: underline;
   color: #b54216;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #C94A18;
   text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
 }

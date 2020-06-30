@@ -4422,7 +4422,7 @@
 }
 
 .tw-shadow-outline {
-  box-shadow: 0 0 0 3px rgb(255,178,25);
+  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
 }
 
 .tw-shadow-none {
@@ -4446,7 +4446,7 @@
 }
 
 .hover\:tw-shadow-outline:hover {
-  box-shadow: 0 0 0 3px rgb(255,178,25);
+  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
 }
 
 .hover\:tw-shadow-none:hover {
@@ -4470,10 +4470,34 @@
 }
 
 .focus\:tw-shadow-outline:focus {
-  box-shadow: 0 0 0 3px rgb(255,178,25);
+  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
 }
 
 .focus\:tw-shadow-none:focus {
+  box-shadow: none;
+}
+
+.focus-within\:tw-shadow:focus-within {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+
+.focus-within\:tw-shadow-md:focus-within {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.focus-within\:tw-shadow-lg:focus-within {
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+}
+
+.focus-within\:tw-shadow-inner:focus-within {
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+}
+
+.focus-within\:tw-shadow-outline:focus-within {
+  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+}
+
+.focus-within\:tw-shadow-none:focus-within {
   box-shadow: none;
 }
 
@@ -12762,7 +12786,7 @@ video {
   }
 
   .sm\:tw-shadow-outline {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .sm\:tw-shadow-none {
@@ -12786,7 +12810,7 @@ video {
   }
 
   .sm\:hover\:tw-shadow-outline:hover {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .sm\:hover\:tw-shadow-none:hover {
@@ -12810,10 +12834,34 @@ video {
   }
 
   .sm\:focus\:tw-shadow-outline:focus {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .sm\:focus\:tw-shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .sm\:focus-within\:tw-shadow:focus-within {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  }
+
+  .sm\:focus-within\:tw-shadow-md:focus-within {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+  }
+
+  .sm\:focus-within\:tw-shadow-lg:focus-within {
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+  }
+
+  .sm\:focus-within\:tw-shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+  }
+
+  .sm\:focus-within\:tw-shadow-outline:focus-within {
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  }
+
+  .sm\:focus-within\:tw-shadow-none:focus-within {
     box-shadow: none;
   }
 
@@ -20515,7 +20563,7 @@ video {
   }
 
   .md\:tw-shadow-outline {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .md\:tw-shadow-none {
@@ -20539,7 +20587,7 @@ video {
   }
 
   .md\:hover\:tw-shadow-outline:hover {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .md\:hover\:tw-shadow-none:hover {
@@ -20563,10 +20611,34 @@ video {
   }
 
   .md\:focus\:tw-shadow-outline:focus {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .md\:focus\:tw-shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .md\:focus-within\:tw-shadow:focus-within {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  }
+
+  .md\:focus-within\:tw-shadow-md:focus-within {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+  }
+
+  .md\:focus-within\:tw-shadow-lg:focus-within {
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+  }
+
+  .md\:focus-within\:tw-shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+  }
+
+  .md\:focus-within\:tw-shadow-outline:focus-within {
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  }
+
+  .md\:focus-within\:tw-shadow-none:focus-within {
     box-shadow: none;
   }
 
@@ -28268,7 +28340,7 @@ video {
   }
 
   .lg\:tw-shadow-outline {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .lg\:tw-shadow-none {
@@ -28292,7 +28364,7 @@ video {
   }
 
   .lg\:hover\:tw-shadow-outline:hover {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .lg\:hover\:tw-shadow-none:hover {
@@ -28316,10 +28388,34 @@ video {
   }
 
   .lg\:focus\:tw-shadow-outline:focus {
-    box-shadow: 0 0 0 3px rgb(255,178,25);
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   }
 
   .lg\:focus\:tw-shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .lg\:focus-within\:tw-shadow:focus-within {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  }
+
+  .lg\:focus-within\:tw-shadow-md:focus-within {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+  }
+
+  .lg\:focus-within\:tw-shadow-lg:focus-within {
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+  }
+
+  .lg\:focus-within\:tw-shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+  }
+
+  .lg\:focus-within\:tw-shadow-outline:focus-within {
+    box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  }
+
+  .lg\:focus-within\:tw-shadow-none:focus-within {
     box-shadow: none;
   }
 

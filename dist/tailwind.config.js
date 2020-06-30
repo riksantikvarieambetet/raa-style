@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   prefix: 'tw-',
@@ -94,7 +94,7 @@ module.exports = {
       md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
       lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
       inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
-      outline: '0 0 0 3px rgb(255,178,25)',
+      outline: '0 0 0.1px 3px rgb(255,178,25)',
       none: 'none',
     },
     container: {},
@@ -298,7 +298,7 @@ module.exports = {
     borderRadius: ['responsive'],
     borderStyle: ['responsive', 'focus', 'active'],
     borderWidth: ['responsive', 'hover', 'focus', 'active'],
-    boxShadow: ['responsive', 'hover', 'focus'],
+    boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
     cursor: ['responsive'],
     display: ['responsive'],
     fill: ['responsive'],
@@ -353,13 +353,13 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-      plugin( ({ addUtilities, variants }) => {
+    plugin(({ addUtilities, variants }) => {
       const outlineTransparent = {
         '.outline-transparent': {
-          outline: '2px dotted transparent'
-        }
-      }
-      addUtilities(outlineTransparent, variants('outlineTransparent'))
-  })
-  ]
+          outline: '2px dotted transparent',
+        },
+      };
+      addUtilities(outlineTransparent, variants('outlineTransparent'));
+    }),
+  ],
 };
