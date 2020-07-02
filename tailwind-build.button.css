@@ -29,6 +29,10 @@
   @apply .tw-shadow-outline .tw-outline-transparent;
 }
 
+.raa-button:active:not([disabled]) {
+  @apply .tw-bg-raa-orange-active .tw-border-raa-orange-active;
+}
+
 .raa-button:disabled {
   @apply .tw-cursor-default .tw-opacity-50;
 }
@@ -41,7 +45,7 @@
   @apply .tw-bg-raa-white .tw-text-raa-orange-hover .tw-border-raa-orange-hover;
 }
 
-.raa-button-secondary:active {
+.raa-button-secondary:active:not([disabled]) {
   @apply .tw-bg-raa-white .tw-text-raa-orange-active .tw-border-raa-orange-active;
 }
 
@@ -57,7 +61,7 @@
   @apply .tw-bg-raa-green-hover .tw-border-raa-green-hover;
 }
 
-.raa-button-confirm:active {
+.raa-button-confirm:active:not([disabled]) {
   @apply .tw-bg-raa-green-active .tw-border-raa-green-active;
 }
 
@@ -73,7 +77,7 @@
   @apply .tw-bg-raa-gray-hover .tw-border-raa-gray-hover;
 }
 
-.raa-button-cancel:active {
+.raa-button-cancel:active:not([disabled]) {
   @apply .tw-bg-raa-gray-active .tw-border-raa-gray-active;
 }
 

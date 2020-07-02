@@ -19033,6 +19033,10 @@ video {
   box-shadow: 0 0 0.1px 3px #ffb219;
   outline: 2px dotted transparent; }
 
+.raa-button:active:not([disabled]) {
+  background-color: #a33b14;
+  border-color: #a33b14; }
+
 .raa-button:disabled {
   cursor: default;
   opacity: 0.5; }
@@ -19049,7 +19053,7 @@ video {
   color: #b54216;
   border-color: #b54216; }
 
-.raa-button-secondary:active {
+.raa-button-secondary:active:not([disabled]) {
   background-color: #ffffff;
   color: #a33b14;
   border-color: #a33b14; }
@@ -19066,7 +19070,7 @@ video {
   background-color: #00786c;
   border-color: #00786c; }
 
-.raa-button-confirm:active {
+.raa-button-confirm:active:not([disabled]) {
   background-color: #006c61;
   border-color: #006c61; }
 
@@ -19082,7 +19086,7 @@ video {
   background-color: #626665;
   border-color: #626665; }
 
-.raa-button-cancel:active {
+.raa-button-cancel:active:not([disabled]) {
   background-color: #565a59;
   border-color: #565a59; }
 
@@ -19134,7 +19138,6 @@ video {
   text-decoration: underline;
   color: #b54216;
   background-color: transparent;
-  color: #C94A18;
   text-decoration-color: #b54216;
   /*Färg = tw-text-raa-orange-hover*/ }
 

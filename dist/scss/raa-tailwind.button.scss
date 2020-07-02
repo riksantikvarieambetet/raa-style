@@ -17,7 +17,7 @@
   border: none;
 }
 
-.raa-button:hover:not([disabled]) {
+.raa-button:hover:not([disabled]){
   background-color: #b54216;
   border-color: #b54216;
 }
@@ -30,6 +30,11 @@
 .raa-button-focus:focus {
   box-shadow: 0 0 0.1px 3px rgb(255,178,25);
   outline: 2px dotted transparent;
+}
+
+.raa-button:active:not([disabled]) {
+  background-color: #a33b14;
+  border-color: #a33b14;
 }
 
 .raa-button:disabled {
@@ -51,7 +56,7 @@
   border-color: #b54216;
 }
 
-.raa-button-secondary:active {
+.raa-button-secondary:active:not([disabled]) {
   background-color: #ffffff;
   color: #a33b14;
   border-color: #a33b14;
@@ -72,7 +77,7 @@
   border-color: #00786c;
 }
 
-.raa-button-confirm:active {
+.raa-button-confirm:active:not([disabled]) {
   background-color: #006c61;
   border-color: #006c61;
 }
@@ -92,7 +97,7 @@
   border-color: #626665;
 }
 
-.raa-button-cancel:active {
+.raa-button-cancel:active:not([disabled]) {
   background-color: #565a59;
   border-color: #565a59;
 }
