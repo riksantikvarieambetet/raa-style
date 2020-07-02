@@ -8,13 +8,18 @@
   line-height: 1.375rem;
   text-decoration-color: transparent; }
 
+.raa-link:focus {
+  text-decoration: underline;
+  background-color: #C94A18;
+  color: #ffffff;
+  outline: 2px dotted transparent; }
+
 .raa-link:hover {
+  text-decoration: underline;
   color: #b54216;
+  background-color: transparent;
   text-decoration-color: #b54216;
   /*Färg = tw-text-raa-orange-hover*/ }
-
-.raa-link.text-decoration-inherit-color:hover {
-  text-decoration-color: inherit; }
 
 .raa-link:active {
   color: #a33b14;
@@ -22,7 +27,6 @@
 
 /*Tar bort underline under ikon som ligger i länkar och centrerar den*/
 .raa-link .raa-icon {
-  color: #C94A18;
   display: inline-block;
   position: relative;
   top: 0.1em; }
