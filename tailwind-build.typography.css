@@ -1,252 +1,131 @@
 .raa-link {
-  @apply .tw-inline-block
-    .tw-text-raa-orange
-    .tw-underline
-    .tw-cursor-pointer;
+  @apply tw-inline-block tw-text-raa-orange tw-underline tw-cursor-pointer;
   transition: all 0.4s;
   line-height: 1.375rem;
   text-decoration-color: transparent;
 }
 
 .raa-link:focus {
-  @apply .tw-underline .tw-bg-raa-orange .tw-text-raa-white .tw-outline-transparent;
+  @apply tw-underline tw-bg-raa-orange tw-text-raa-white tw-outline-transparent;
 }
 
 .raa-link:hover {
-  @apply .tw-underline .tw-text-raa-orange-hover .tw-bg-transparent;
-  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
+  @apply tw-underline tw-text-raa-orange-hover tw-bg-transparent;
 }
 
 .raa-link:active {
-  @apply .tw-text-raa-orange-active .tw-border-raa-orange-active;
+  @apply tw-text-raa-orange-active tw-border-raa-orange-active;
 }
 
 /*Tar bort underline under ikon som ligger i länkar och centrerar den*/
 .raa-link .raa-icon {
-  display: inline-block;
-  position: relative;
+  @apply tw-inline-block tw-relative;
   top: 0.1em;
 }
 
 .raa-label {
-  @apply .tw-flex .tw-font-semibold .tw-my-1 .tw-mx-0;
+  @apply tw-flex tw-font-semibold tw-my-1 tw-mx-0;
 }
 
 .raa-label.select {
-  @apply .tw-relative .tw-font-normal .tw-text-sm .tw-inline-flex .tw-items-center;
+  @apply tw-relative tw-font-normal tw-inline-flex tw-items-center;
 }
 
 .raa-menu-text {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  @apply .tw-text-raa-orange;
+  @apply tw-text-size-1 tw-leading-size-1.25 tw-uppercase tw-text-raa-orange;
 }
 
 .raa-menu-text:hover {
-  @apply .tw-text-raa-orange-hover .tw-underline;
+  @apply tw-text-raa-orange-hover tw-underline;
 }
 
 .raa-menu-text:active {
-  @apply .tw-text-raa-orange-active .tw-underline;
+  @apply tw-text-raa-orange-active tw-underline;
 }
 
 .raa-warning-text {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  @apply .tw-text-raa-error-red;
-}
-
-/* små skärmar, mobile first*/
-.tw-text-size-hero {
-  font-size: 2.5rem;
-}
-
-.tw-text-size-h1 {
-  font-size: 2rem;
-}
-
-.tw-text-size-h2 {
-  font-size: 1.625rem;
-}
-
-.tw-text-size-h3 {
-  font-size: 1.375rem;
-}
-
-.tw-text-size-h4 {
-  font-size: 1.125rem;
-}
-
-.hero {
-  font-size: 2.5rem;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-
-h2 {
-  font-size: 1.625rem;
-  line-height: 1.75rem;
-}
-
-h3 {
-  font-size: 1.375rem;
-  line-height: 1.563rem;
-}
-
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.188rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
-.raa-large-text {
-  font-size: 1.313rem;
-  line-height: 1.625rem;
-}
-
-.raa-small-text {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  @apply tw-text-size-1 tw-text-raa-error-red;
 }
 
 .raa-secondary-text {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  @apply .tw-text-raa-gray-5;
+  @apply tw-text-size-0.8125 tw-text-raa-gray-5;
 }
 
-/*Mediumstora skärmar*/
-@media only screen and (min-width: 520px) and (max-width: 1023px) {
-  .md\:tw-text-size-hero {
-    font-size: 3.75rem;
-  }
+p {
+  @apply tw-text-size-1;
+}
 
-  .md\:tw-text-size-h1 {
-    font-size: 2.5rem;
-  }
+.tw-raa-heading-xl {
+  @apply tw-text-size-2;
+}
 
-  .md\:tw-text-size-h2 {
-    font-size: 2rem;
-  }
+.tw-raa-heading-lg {
+  @apply tw-text-size-1.625;
+}
 
-  .md\:tw-text-size-h3 {
-    font-size: 1.5rem;
-  }
+.tw-raa-heading-md {
+  @apply tw-text-size-1.375;
+}
 
-  .md\:tw-text-size-h4 {
-    font-size: 1.125rem;
-  }
+.tw-raa-heading-sm {
+  @apply tw-text-size-1.125;
+}
 
-  .hero {
-    font-size: 3.75rem;
-    line-height: 3.938rem;
-  }
+@screen sm {
+  /* TODO Vi hoppar över det här steget nu. Ska vi det?
+  .raa-heading-1 {*/
+  /*  @apply tw-text-size-2.5 tw-leading-size-2.813;*/
+  /*}*/
+}
 
-  h1 {
-    font-size: 2.5rem;
-    line-height: 2.813rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-  }
-
-  h4 {
-    font-size: 1.125rem;
-    line-height: 1.313rem;
-  }
-
+@screen md {
   p {
-    font-size: 1rem;
-    line-height: 1.375rem;
+    @apply tw-text-size-1;
+  }
+
+  .tw-raa-heading-xl {
+    @apply tw-text-size-2.5;
+  }
+
+  .tw-raa-heading-lg {
+    @apply tw-text-size-2;
+  }
+
+  .tw-raa-heading-md {
+    @apply tw-text-size-1.5;
+  }
+
+  .tw-raa-heading-sm {
+    @apply tw-text-size-1.125;
   }
 
   .raa-warning-text {
-    font-size: 1rem;
-    line-height: 1.375rem;
-    @apply .tw-text-raa-error-red;
-  }
-
-  .large-text {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
+    @apply tw-text-size-1 tw-text-raa-error-red;
   }
 }
 
-/*Stora skärmar*/
-@media only screen and (min-width: 1024px) {
-  .lg\:tw-text-size-hero {
-    font-size: 5rem;
-  }
-
-  .lg\:tw-text-size-h1 {
-    font-size: 3rem;
-  }
-
-  .lg\:tw-text-size-h2 {
-    font-size: 3rem;
-  }
-
-  .lg\:tw-text-size-h3 {
-    font-size: 1.75rem;
-  }
-
-  .lg\:tw-text-size-h4 {
-    font-size: 1.125rem;
-  }
-
-  .hero {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    line-height: 3.125rem;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2.813rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-    line-height: 1.875rem;
-  }
-
-  h4 {
-    font-size: 1.125rem;
-    line-height: 1.313rem;
-  }
-
+@screen lg {
   p {
-    font-size: 1rem;
-    line-height: 1.375rem;
+    @apply tw-text-size-1;
   }
 
   .raa-warning-text {
-    font-size: 1rem;
-    line-height: 1.375rem;
-    @apply .tw-text-raa-error-red;
+    @apply tw-text-size-1 tw-text-raa-error-red;
   }
 
-  .large-text {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
+  .tw-raa-heading-xl {
+    @apply tw-text-size-3;
+  }
+
+  .tw-raa-heading-lg {
+    @apply tw-text-size-2.25;
+  }
+
+  .tw-raa-heading-md {
+    @apply tw-text-size-1.75;
+  }
+
+  .tw-raa-heading-sm {
+    @apply tw-text-size-1.125;
   }
 }

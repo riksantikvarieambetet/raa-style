@@ -1,6 +1,8 @@
 .raa-link {
   display: inline-block;
+  --text-opacity: 1;
   color: #C94A18;
+  color: rgba(201, 74, 24, var(--text-opacity));
   text-decoration: underline;
   cursor: pointer;
   transition: all 0.4s;
@@ -10,21 +12,30 @@
 
 .raa-link:focus {
   text-decoration: underline;
+  --bg-opacity: 1;
   background-color: #C94A18;
+  background-color: rgba(201, 74, 24, var(--bg-opacity));
+  --text-opacity: 1;
   color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
   outline: 2px dotted transparent;
 }
 
 .raa-link:hover {
   text-decoration: underline;
+  --text-opacity: 1;
   color: #b54216;
+  color: rgba(181, 66, 22, var(--text-opacity));
   background-color: transparent;
-  text-decoration-color: #b54216; /*Färg = tw-text-raa-orange-hover*/
 }
 
 .raa-link:active {
+  --text-opacity: 1;
   color: #a33b14;
+  color: rgba(163, 59, 20, var(--text-opacity));
+  --border-opacity: 1;
   border-color: #a33b14;
+  border-color: rgba(163, 59, 20, var(--border-opacity));
 }
 
 /*Tar bort underline under ikon som ligger i länkar och centrerar den*/
@@ -47,227 +58,150 @@
 .raa-label.select {
   position: relative;
   font-weight: 400;
-  font-size: .813rem;
   display: inline-flex;
   align-items: center;
 }
 
 .raa-menu-text {
   font-size: 1rem;
+  line-height: 1.05rem;
   line-height: 1.25rem;
   text-transform: uppercase;
+  --text-opacity: 1;
   color: #C94A18;
+  color: rgba(201, 74, 24, var(--text-opacity));
 }
 
 .raa-menu-text:hover {
+  --text-opacity: 1;
   color: #b54216;
+  color: rgba(181, 66, 22, var(--text-opacity));
   text-decoration: underline;
 }
 
 .raa-menu-text:active {
+  --text-opacity: 1;
   color: #a33b14;
+  color: rgba(163, 59, 20, var(--text-opacity));
   text-decoration: underline;
 }
 
 .raa-warning-text {
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.05rem;
+  --text-opacity: 1;
   color: #DB0000;
-}
-
-/* små skärmar, mobile first*/
-
-.tw-text-size-hero {
-  font-size: 2.5rem;
-}
-
-.tw-text-size-h1 {
-  font-size: 2rem;
-}
-
-.tw-text-size-h2 {
-  font-size: 1.625rem;
-}
-
-.tw-text-size-h3 {
-  font-size: 1.375rem;
-}
-
-.tw-text-size-h4 {
-  font-size: 1.125rem;
-}
-
-.hero {
-  font-size: 2.5rem;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-
-h2 {
-  font-size: 1.625rem;
-  line-height: 1.75rem;
-}
-
-h3 {
-  font-size: 1.375rem;
-  line-height: 1.563rem;
-}
-
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.188rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
-.raa-large-text {
-  font-size: 1.313rem;
-  line-height: 1.625rem;
-}
-
-.raa-small-text {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  color: rgba(219, 0, 0, var(--text-opacity));
 }
 
 .raa-secondary-text {
   font-size: 0.8125rem;
-  line-height: 1.125rem;
+  line-height: 0.8325rem;
+  --text-opacity: 1;
   color: #6A6A6A;
+  color: rgba(106, 106, 106, var(--text-opacity));
 }
 
-/*Mediumstora skärmar*/
+p {
+  font-size: 1rem;
+  line-height: 1.05rem;
+}
 
-@media only screen and (min-width: 520px) and (max-width: 1023px) {
-  .md\:tw-text-size-hero {
-    font-size: 3.75rem;
-  }
+.tw-raa-heading-xl {
+  font-size: 2rem;
+  line-height: 2.05rem;
+}
 
-  .md\:tw-text-size-h1 {
-    font-size: 2.5rem;
-  }
+.tw-raa-heading-lg {
+  font-size: 1.625rem;
+  line-height: 1.675rem;
+}
 
-  .md\:tw-text-size-h2 {
-    font-size: 2rem;
-  }
+.tw-raa-heading-md {
+  font-size: 1.375rem;
+  line-height: 1.395rem;
+}
 
-  .md\:tw-text-size-h3 {
-    font-size: 1.5rem;
-  }
+.tw-raa-heading-sm {
+  font-size: 1.125rem;
+  line-height: 1.145rem;
+}
 
-  .md\:tw-text-size-h4 {
-    font-size: 1.125rem;
-  }
+@media (min-width: 520px) {
+  /* TODO Vi hoppar över det här steget nu. Ska vi det?
+  .raa-heading-1 {*/
 
-  .hero {
-    font-size: 3.75rem;
-    line-height: 3.938rem;
-  }
+  /*  @apply tw-text-size-2.5 tw-leading-size-2.813;*/
 
-  h1 {
-    font-size: 2.5rem;
-    line-height: 2.813rem;
-  }
+  /*}*/
+}
 
-  h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-  }
-
-  h4 {
-    font-size: 1.125rem;
-    line-height: 1.313rem;
-  }
-
+@media (min-width: 570px) {
   p {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.05rem
+  }
+
+  .tw-raa-heading-xl {
+    font-size: 2.5rem;
+    line-height: 2.55rem;
+  }
+
+  .tw-raa-heading-lg {
+    font-size: 2rem;
+    line-height: 2.05rem;
+  }
+
+  .tw-raa-heading-md {
+    font-size: 1.5rem;
+    line-height: 1.55rem;
+  }
+
+  .tw-raa-heading-sm {
+    font-size: 1.125rem;
+    line-height: 1.145rem;
   }
 
   .raa-warning-text {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.05rem;
+    --text-opacity: 1;
     color: #DB0000;
-  }
-
-  .large-text {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
+    color: rgba(219, 0, 0, var(--text-opacity));
   }
 }
 
-/*Stora skärmar*/
-
-@media only screen and (min-width: 1024px) {
-  .lg\:tw-text-size-hero {
-    font-size: 5rem;
+@media (min-width: 1025px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.05rem
   }
 
-  .lg\:tw-text-size-h1 {
+  .raa-warning-text {
+    font-size: 1rem;
+    line-height: 1.05rem;
+    --text-opacity: 1;
+    color: #DB0000;
+    color: rgba(219, 0, 0, var(--text-opacity));
+  }
+
+  .tw-raa-heading-xl {
     font-size: 3rem;
+    line-height: 3.05rem;
   }
 
-  .lg\:tw-text-size-h2 {
-    font-size: 3rem;
-  }
-
-  .lg\:tw-text-size-h3 {
-    font-size: 1.75rem;
-  }
-
-  .lg\:tw-text-size-h4 {
-    font-size: 1.125rem;
-  }
-
-  .hero {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    line-height: 3.125rem;
-  }
-
-  h2 {
+  .tw-raa-heading-lg {
     font-size: 2.25rem;
-    line-height: 2.813rem;
+    line-height: 2.30rem;
   }
 
-  h3 {
+  .tw-raa-heading-md {
     font-size: 1.75rem;
-    line-height: 1.875rem;
+    line-height: 1.8rem;
   }
 
-  h4 {
+  .tw-raa-heading-sm {
     font-size: 1.125rem;
-    line-height: 1.313rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-
-  .raa-warning-text {
-    font-size: 1rem;
-    line-height: 1.375rem;
-    color: #DB0000;
-  }
-
-  .large-text {
-    font-size: 1.313rem;
-    line-height: 1.75rem;
+    line-height: 1.145rem;
   }
 }
