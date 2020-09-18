@@ -107,101 +107,78 @@ p {
   line-height: 1.05rem;
 }
 
-.tw-raa-heading-xl {
+.tw-heading-xl {
   font-size: 2rem;
   line-height: 2.05rem;
+  line-height: 2.5rem;
 }
 
-.tw-raa-heading-lg {
+.tw-heading-lg {
   font-size: 1.625rem;
   line-height: 1.675rem;
+  line-height: 1.75rem;
 }
 
-.tw-raa-heading-md {
+.tw-heading-md {
   font-size: 1.375rem;
   line-height: 1.395rem;
+  line-height: 1.563rem;
 }
 
-.tw-raa-heading-sm {
+.tw-heading-sm {
   font-size: 1.125rem;
   line-height: 1.145rem;
-}
-
-@media (min-width: 520px) {
-  /* TODO Vi hoppar över det här steget nu. Ska vi det?
-  .raa-heading-1 {*/
-
-  /*  @apply tw-text-size-2.5 tw-leading-size-2.813;*/
-
-  /*}*/
+  line-height: 1.188rem;
 }
 
 @media (min-width: 570px) {
-  p {
-    font-size: 1rem;
-    line-height: 1.05rem
-  }
-
-  .tw-raa-heading-xl {
+  .tw-heading-xl {
     font-size: 2.5rem;
     line-height: 2.55rem;
+    line-height: 2.813rem;
   }
 
-  .tw-raa-heading-lg {
+  .tw-heading-lg {
     font-size: 2rem;
     line-height: 2.05rem;
+    line-height: 2.5rem;
   }
 
-  .tw-raa-heading-md {
+  .tw-heading-md {
     font-size: 1.5rem;
     line-height: 1.55rem;
+    line-height: 1.875rem;
   }
 
-  .tw-raa-heading-sm {
+  .tw-heading-sm {
     font-size: 1.125rem;
     line-height: 1.145rem;
-  }
-
-  .raa-warning-text {
-    font-size: 1rem;
-    line-height: 1.05rem;
-    --text-opacity: 1;
-    color: #DB0000;
-    color: rgba(219, 0, 0, var(--text-opacity));
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1025px) {
-  p {
-    font-size: 1rem;
-    line-height: 1.05rem
-  }
-
-  .raa-warning-text {
-    font-size: 1rem;
-    line-height: 1.05rem;
-    --text-opacity: 1;
-    color: #DB0000;
-    color: rgba(219, 0, 0, var(--text-opacity));
-  }
-
-  .tw-raa-heading-xl {
+  .tw-heading-xl {
     font-size: 3rem;
     line-height: 3.05rem;
+    line-height: 3.125rem;
   }
 
-  .tw-raa-heading-lg {
+  .tw-heading-lg {
     font-size: 2.25rem;
     line-height: 2.30rem;
+    line-height: 2.813rem;
   }
 
-  .tw-raa-heading-md {
+  .tw-heading-md {
     font-size: 1.75rem;
     line-height: 1.8rem;
+    line-height: 1.875rem;
   }
 
-  .tw-raa-heading-sm {
+  .tw-heading-sm {
     font-size: 1.125rem;
     line-height: 1.145rem;
+    line-height: 1.75rem;
   }
 }
