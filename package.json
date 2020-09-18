@@ -45,7 +45,7 @@
     "postcss-import": "^12.0.1",
     "prettier": "^1.13.7",
     "pretty-quick": "^1.6.0",
-    "tailwindcss": "^1.1.4"
+    "tailwindcss": "^1.8.10"
   },
   "private": false
 }
