@@ -57,7 +57,7 @@
 
 .raa-menu-text {
   font-size: 1rem;
-  line-height: 1.05rem;
+  line-height: 1.25rem;
   line-height: 1.25rem;
   text-transform: uppercase;
   --text-opacity: 1;
@@ -78,7 +78,7 @@
 
 .raa-warning-text {
   font-size: 1rem;
-  line-height: 1.05rem;
+  line-height: 1.25rem;
   --text-opacity: 1;
   color: #DB0000;
   color: rgba(219, 0, 0, var(--text-opacity)); }
@@ -92,7 +92,7 @@
 
 p {
   font-size: 1rem;
-  line-height: 1.05rem; }
+  line-height: 1.25rem; }
 
 .tw-heading-xl {
   font-size: 2rem;
@@ -115,6 +115,10 @@ p {
   line-height: 1.188rem; }
 
 @media (min-width: 570px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    line-height: 1.375rem; }
   .tw-heading-xl {
     font-size: 2.5rem;
     line-height: 2.55rem;
@@ -133,6 +137,10 @@ p {
     line-height: 1.75rem; } }
 
 @media (min-width: 1025px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    line-height: 1.375rem; }
   .tw-heading-xl {
     font-size: 3rem;
     line-height: 3.05rem;

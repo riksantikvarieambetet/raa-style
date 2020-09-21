@@ -3233,7 +3233,7 @@
 
 .tw-text-size-1 {
   font-size: 1rem;
-  line-height: 1.05rem; }
+  line-height: 1.25rem; }
 
 .tw-text-size-0\.813 {
   font-size: 0.813rem;
@@ -11173,7 +11173,7 @@ video {
     line-height: 1.145rem; }
   .md\:tw-text-size-1 {
     font-size: 1rem;
-    line-height: 1.05rem; }
+    line-height: 1.25rem; }
   .md\:tw-text-size-0\.813 {
     font-size: 0.813rem;
     line-height: 0.833rem; }
@@ -17063,7 +17063,7 @@ video {
     line-height: 1.145rem; }
   .lg\:tw-text-size-1 {
     font-size: 1rem;
-    line-height: 1.05rem; }
+    line-height: 1.25rem; }
   .lg\:tw-text-size-0\.813 {
     font-size: 0.813rem;
     line-height: 0.833rem; }
