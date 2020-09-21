@@ -72,6 +72,10 @@ p {
 }
 
 @screen md {
+  p {
+    @apply tw-text-size-1 tw-leading-1.375;
+  }
+
   .tw-heading-xl {
     @apply tw-text-size-2.5 tw-leading-2.813;
   }
@@ -90,6 +94,10 @@ p {
 }
 
 @screen lg {
+  p {
+    @apply tw-text-size-1 tw-leading-1.375;
+  }
+
   .tw-heading-xl {
     @apply tw-text-size-3 tw-leading-3.125;
   }
