@@ -21,6 +21,8 @@ Default-registry för detta sätts i .npmrc.
 
 #### Publicera:
 
+Publicering till Artifactory sker manuellt/lokalt, dvs. ej genom Bamboo. Följ instruktioner nedan:
+
 För att kunna publicera nya versioner av raa-style till artifactory behöver man logga in på det virtuella repositoriet 'common-npm-prod'.
 Konfiguration för till var nya publiceringar sker sätts i package.json på:
 
