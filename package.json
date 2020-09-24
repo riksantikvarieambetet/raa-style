@@ -4,7 +4,7 @@
   "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på http://styleguide.raa.se/.",
   "main": "",
   "publishConfig": {
-    "registry": "https://artifactory.raa.se/artifactory/api/npm/npm/"
+    "registry": "https://artifactory.raa.se/artifactory/api/npm/common-npm-prod/"
   },
   "scripts": {
     "start": "npm run build && node-sass -w src --output dist/css",
