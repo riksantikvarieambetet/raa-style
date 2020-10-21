@@ -96,50 +96,64 @@ p {
 
 .tw-heading-xl {
   font-size: 2rem;
-  line-height: 2.75rem; }
+  line-height: 2.5rem;
+  line-height: 2.5rem; }
 
 .tw-heading-lg {
   font-size: 1.625rem;
-  line-height: 2.234rem; }
+  line-height: 1.75rem;
+  line-height: 1.75rem; }
 
 .tw-heading-md {
   font-size: 1.375rem;
-  line-height: 1.890rem; }
+  line-height: 1.563rem;
+  line-height: 1.563rem; }
 
 .tw-heading-sm {
   font-size: 1.125rem;
-  line-height: 1.547rem; }
+  line-height: 1.188rem;
+  line-height: 1.188rem; }
 
 @media (min-width: 570px) {
   p {
     font-size: 1rem;
+    line-height: 1.375rem;
     line-height: 1.375rem; }
   .tw-heading-xl {
     font-size: 2.5rem;
-    line-height: 3.437rem; }
+    line-height: 2.813rem;
+    line-height: 2.813rem; }
   .tw-heading-lg {
     font-size: 2rem;
-    line-height: 2.75rem; }
+    line-height: 2.5rem;
+    line-height: 2.5rem; }
   .tw-heading-md {
     font-size: 1.5rem;
-    line-height: 2,0625rem; }
+    line-height: 1.875rem;
+    line-height: 1.875rem; }
   .tw-heading-sm {
     font-size: 1.125rem;
-    line-height: 1.547rem; } }
+    line-height: 1.188rem;
+    line-height: 1.75rem; } }
 
 @media (min-width: 1025px) {
   p {
     font-size: 1rem;
+    line-height: 1.375rem;
     line-height: 1.375rem; }
   .tw-heading-xl {
     font-size: 3rem;
-    line-height: 4.125rem; }
+    line-height: 3.05rem;
+    line-height: 3.125rem; }
   .tw-heading-lg {
     font-size: 2.25rem;
-    line-height: 3.094rem; }
+    line-height: 2.813rem;
+    line-height: 2.813rem; }
   .tw-heading-md {
     font-size: 1.75rem;
-    line-height: 2.406rem; }
+    line-height: 1.875rem;
+    line-height: 1.875rem; }
   .tw-heading-sm {
     font-size: 1.125rem;
-    line-height: 1.547rem; } }
+    line-height: 1.188rem;
+    line-height: 1.75rem; } }
