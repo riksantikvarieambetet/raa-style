@@ -147,7 +147,7 @@ module.exports = {
     },
     fontSize: {
       'size-3.75': ['3.75rem', '3.8rem'],
-      'size-3': ['3rem', '3.05rem'],
+      'size-3': ['3rem', '3.125rem'],
       'size-2.5': ['2.5rem', '2.813rem'],
       'size-2.25': ['2.25rem', '2.813rem'],
       'size-2': ['2rem', '2.5rem'],
@@ -156,7 +156,7 @@ module.exports = {
       'size-1.5': ['1.5rem', '1.875rem'],
       'size-1.375': ['1.375rem', '1.563rem'],
       'size-1.313': ['1.313rem', '1.805rem'],
-      'size-1.125': ['1.125rem', '1.188rem'],
+      'size-1.125': ['1.125rem', '1.75rem'],
       'size-1': ['1rem', '1.375rem'],
       'size-0.813': ['0.813rem', '1.118rem'],
       'size-0.8125': ['0.8125rem', '1.117rem'],
