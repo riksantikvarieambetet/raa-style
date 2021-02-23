@@ -34,9 +34,7 @@
   ],
   "author": "Riksantikvarieämbetet",
   "license": "MIT",
-  "dependencies": {
-    "normalize-scss": "^7.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "husky": "^0.14.3",
     "mkdirp": "^0.5.1",
