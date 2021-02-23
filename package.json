@@ -14,7 +14,7 @@
     "build:css": "node-sass src --output dist/css",
     "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
     "build:list-icons": "node list-icons.js",
-    "build:copy-assets": "cp -R assets dist/",
+    "build:copy-assets": "mkdirp dist && cp -r assets dist/",
     "tailwind": "yarn tailwind:core && yarn tailwind:button && yarn tailwind:typography && yarn tailwind:input",
     "tailwind:core": "postcss ./tailwind-build.css -o ./src/raa-tailwind.scss",
     "tailwind:button": "postcss ./tailwind-build.button.css -o ./src/raa-tailwind.button.scss",
