@@ -1,22 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
-@import '../node_modules/normalize-scss/sass/_normalize';
-
-// Import av normaliserings-css
-@include normalize();
+@import 'dist/fonts/SourceSansPro/SourceSansPro';
 
 body {
   font-size: 16px;
   font-weight: normal;
-  font-family: 'Source Sans Pro', sans-serif;
   color: #3a3a3a;
   letter-spacing: normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-.large-text {
-  font-weight: normal;
+// Sätt alltid all font till Source Sans Pro
+* {
+  box-sizing: inherit;
+  font-family: 'Source Sans Pro', sans-serif;
 }
