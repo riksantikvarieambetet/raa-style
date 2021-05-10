@@ -23,7 +23,7 @@ $raa-style-font-path: '..' !default;
 [class*=' raa-icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'raa-icons' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -35,6 +35,15 @@ $raa-style-font-path: '..' !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.raa-icon-database:before {
+  content: '\e930';
+}
+.raa-icon-table:before {
+  content: '\e940';
+}
+.raa-icon-textfile:before {
+  content: '\e941';
+}
 .raa-icon-lock-closed:before {
   content: '\e943';
 }
