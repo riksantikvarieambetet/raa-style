@@ -95,37 +95,3 @@
   @apply tw-text-raa-orange tw-bg-raa-white tw-border-raa-orange tw-border-2 tw-border-b-0 tw-border-solid;
   box-sizing: border-box;
 }
-
-@responsive {
-  .raa-unset-min-width {
-    min-width: unset;
-  }
-}
-
-.raa-drawer-xsmall {
-  @apply tw-min-w-screen;
-  width: 19.5rem;
-  max-width: 90%;
-}
-
-.raa-drawer-small {
-  @apply tw-min-w-screen;
-  width: 35rem;
-  max-width: 90%;
-}
-
-.raa-drawer-medium {
-  @apply tw-min-w-screen;
-  width: 42rem;
-  max-width: 90%;
-}
-
-.raa-drawer-large {
-  @apply tw-min-w-screen;
-  width: 65rem;
-  max-width: 90%;
-}
-
-.raa-drawer-fullscreen {
-  @apply tw-min-w-screen;
-}
