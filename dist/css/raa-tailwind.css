@@ -4415,9 +4415,6 @@
 .tw-min-w-full {
   min-width: 100%; }
 
-.tw-min-w-screen {
-  min-width: 100vw; }
-
 .tw-object-contain {
   object-fit: contain; }
 
@@ -12411,8 +12408,6 @@ video {
     min-width: 0; }
   .md\:tw-min-w-full {
     min-width: 100%; }
-  .md\:tw-min-w-screen {
-    min-width: 100vw; }
   .md\:tw-object-contain {
     object-fit: contain; }
   .md\:tw-object-cover {
@@ -18607,8 +18602,6 @@ video {
     min-width: 0; }
   .lg\:tw-min-w-full {
     min-width: 100%; }
-  .lg\:tw-min-w-screen {
-    min-width: 100vw; }
   .lg\:tw-object-contain {
     object-fit: contain; }
   .lg\:tw-object-cover {

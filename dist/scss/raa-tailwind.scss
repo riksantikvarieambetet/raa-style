@@ -5607,10 +5607,6 @@
   min-width: 100%;
 }
 
-.tw-min-w-screen {
-  min-width: 100vw;
-}
-
 .tw-object-contain {
   object-fit: contain;
 }
@@ -17326,10 +17322,6 @@ video {
     min-width: 100%;
   }
 
-  .md\:tw-min-w-screen {
-    min-width: 100vw;
-  }
-
   .md\:tw-object-contain {
     object-fit: contain;
   }
@@ -28426,10 +28418,6 @@ video {
 
   .lg\:tw-min-w-full {
     min-width: 100%;
-  }
-
-  .lg\:tw-min-w-screen {
-    min-width: 100vw;
   }
 
   .lg\:tw-object-contain {
