@@ -1,7 +1,7 @@
 {
   "name": "raa-style",
   "version": "5.2.2",
-  "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på http://styleguide.raa.se/.",
+  "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på https://app.raa.se/styleguide/.",
   "main": "",
   "publishConfig": {
     "registry": "https://artifactory.raa.se/artifactory/api/npm/common-npm-prod/"
