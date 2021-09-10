@@ -1,17 +1,17 @@
 .raa-input {
   display: block;
-  width: 100%;
-  padding: 0.75rem;
   height: 2.5rem;
+  width: 100%;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  --border-opacity: 1;
-  border-color: #DADADA;
-  border-color: rgba(218, 218, 218, var(--border-opacity));
-  border-radius: 2px;
-  --bg-opacity: 1;
-  background-color: #ffffff;
-  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(218, 218, 218, var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(58, 58, 58, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 0.75rem;
   font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
 }
@@ -23,12 +23,12 @@
 }
 
 .raa-input.error {
-  --bg-opacity: 1;
-  background-color: #FCEBEB;
-  background-color: rgba(252, 235, 235, var(--bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 235, 235, var(--tw-bg-opacity));
 }
 
 .raa-input:focus {
-  box-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  --tw-shadow: 0 0 0.1px 3px rgb(255,178,25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   outline: 2px dotted transparent;
 }
