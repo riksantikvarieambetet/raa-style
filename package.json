@@ -12,7 +12,7 @@
     "build": "npm run tailwind && npm run build:copy-assets && npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-tailwind-config",
     "build:copy-tailwind-config": "cp ./tailwind.config.js dist/",
     "build:css": "node-sass src --output dist/css",
-    "build:copy-scss": "mkdirp dist/scss && cp src/* dist/scss",
+    "build:copy-scss": "mkdirp dist/scss && cp -r src/* dist/scss",
     "build:list-icons": "node list-icons.js",
     "build:copy-assets": "mkdirp dist && cp -r assets dist/",
     "tailwind": "yarn tailwind:core && yarn tailwind:button && yarn tailwind:typography && yarn tailwind:input",

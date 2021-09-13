@@ -1,5 +1,5 @@
 .raa-button {
-  @apply tw-bg-raa-orange tw-cursor-pointer tw-text-size-1 tw-text-raa-white tw-uppercase tw-font-semibold tw-h-10 tw-px-4 tw-rounded;
+  @apply tw-bg-raa-orange tw-cursor-pointer tw-text-size-1 tw-text-raa-white tw-uppercase tw-font-semibold tw-h-10 tw-px-4 tw-rounded-default;
 
   font-family: 'Source Sans Pro', sans-serif;
   transition: background-color, border-color 0.4s;
