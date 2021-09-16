@@ -80,7 +80,7 @@ module.exports = {
     },
     borderColor: (theme) => ({
       ...theme('colors'),
-      default: theme('colors.raa-gray-6', 'currentColor'),
+      DEFAULT: theme('colors.raa-gray-6', 'currentColor'),
     }),
     borderRadius: {
       none: '0',
@@ -103,7 +103,7 @@ module.exports = {
     container: {},
     cursor: {
       auto: 'auto',
-      DEFAULT: 'default',
+      default: 'default',
       pointer: 'pointer',
       wait: 'wait',
       text: 'text',

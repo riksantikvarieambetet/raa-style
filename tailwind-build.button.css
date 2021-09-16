@@ -26,7 +26,7 @@
 }
 
 .raa-button:disabled {
-  @apply tw-cursor tw-opacity-50;
+  @apply tw-cursor-default tw-opacity-50;
 }
 
 .raa-button-secondary {
@@ -42,7 +42,7 @@
 }
 
 .raa-button-secondary:disabled {
-  @apply tw-cursor tw-opacity-50;
+  @apply tw-cursor-default tw-opacity-50;
 }
 
 .raa-button-confirm {
@@ -58,7 +58,7 @@
 }
 
 .raa-button-confirm:disabled {
-  @apply tw-cursor tw-opacity-50;
+  @apply tw-cursor-default tw-opacity-50;
 }
 
 .raa-button-cancel {
@@ -74,7 +74,7 @@
 }
 
 .raa-button-cancel:disabled {
-  @apply tw-cursor tw-opacity-50;
+  @apply tw-cursor-default tw-opacity-50;
 }
 
 .raa-button-tabs {
