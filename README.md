@@ -6,7 +6,43 @@ Gemensam style (scss/css) för Riksantikvarieämbetet.
 
 ## Användning
 
-För att använda raa-style:s SASS filer i andra projekt måste path:en för ikons fonten sättas upp rätt. Innan raa-styles icons.scss importeras måste variabeln raa-style-font-path defineras enligt
+Raa-style har en tailwind-configurationsfil som varje projekt skall utgå ifrån. I varje projekt som använda raa-style gör följande:
+
+- Installera tailwindcss
+- Kör kommandot `npx tailwindcss init` för att skapa en ny konfigurationsfil.
+- Ändra konfigurationsfilen innehåll till att peka mot raa-styles tailwind-konfiguration på detta sätt:
+
+```
+const raaTailwindConfig = require('raa-style/tailwind.config');
+
+module.exports = {
+    prefix: raaTailwindConfig.prefix,
+    content: raaTailwindConfig.content,
+    theme: raaTailwindConfig.theme,
+    variants: raaTailwindConfig.variants,
+    plugins: raaTailwindConfig.plugins,
+};
+```
+
+Behöver man projektspecifika tailwindklasser behöver man spreada in raa-style theme och lägga till det man behöver efter.
+
+Ex.
+
+```
+theme: { 
+    ...raaTailwindConfig.theme, 
+    fontFamily: { 
+        runlitt: ['runlitt', 'sans-serif'], 
+    }, 
+},
+```
+
+####Obs! Används raa-angular också, se nedan:
+Då Tailwind nuförtiden använder Just In Time-kompilering behöver path:en för raa-angular tas med i tailwind-konfigurationen.
+Annars kommer inte klasserna för dessa att genereras.
+Lägg till `'./node_modules/raa-angular/**/*.*'` i content i tailwind.config.js i ditt projekt baserat på din path till node_modules.
+
+För att använda raa-style:s SASS filer i andra projekt måste path:en för ikons-fonten sättas upp rätt. Innan raa-styles icons.scss importeras måste variabeln raa-style-font-path defineras enligt
 
     $raa-style-font-path: '~raa-style/dist';
     @import "~raa-style/dist/scss/icons";
