@@ -14,11 +14,6 @@ module.exports = {
       md: '570px',
       lg: '1025px',
     },
-    extend: {
-      padding: {
-        3: '0.75rem'
-      }
-    },
     colors: {
       transparent: 'transparent',
       'raa-white': '#ffffff',
@@ -390,10 +385,7 @@ module.exports = {
     zIndex: ['responsive'],
     outlineTransparent: ['focus'],
   },
-  corePlugins: {
-    borderWidth: true,
-    padding: true
-  },
+  corePlugins: {},
   plugins: [
     plugin(({ addUtilities, variants }) => {
       const outlineTransparent = {
