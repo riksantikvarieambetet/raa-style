@@ -6,7 +6,7 @@ Gemensam style (scss/css) för Riksantikvarieämbetet.
 
 ## Användning
 
-Raa-style har en tailwind-configurationsfil som varje projekt skall utgå ifrån. I varje projekt som använda raa-style gör följande:
+Raa-style har en tailwind-configurationsfil som varje projekt skall utgå ifrån. I varje projekt som ska använda raa-style gör följande:
 
 - Installera tailwindcss
 - Kör kommandot `npx tailwindcss init` för att skapa en ny konfigurationsfil.
