@@ -1,14 +1,16 @@
 p.error-message {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  color: #db0000; }
+  color: #db0000;
+}
 
-[id^='raa-checkbox'] {
-  display: none !important; }
+[id^=raa-checkbox] {
+  display: none !important;
+}
 
-[for^='raa-checkbox']:before {
-  font-family: 'Source Sans Pro', 'raa-icons';
-  content: '\e949';
+[for^=raa-checkbox]:before {
+  font-family: "Source Sans Pro", "raa-icons";
+  content: "\e949";
   position: relative;
   top: 0.2rem;
   margin-right: 0.5rem;
@@ -16,39 +18,46 @@ p.error-message {
   background: white;
   font-size: 1.25rem;
   color: #3a3a3a;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
-[type='checkbox']:checked + [for^='raa-checkbox']:before {
+[type=checkbox]:checked + [for^=raa-checkbox]:before {
   background: white;
-  font-family: 'Source Sans Pro', 'raa-icons';
-  content: '\e948';
+  font-family: "Source Sans Pro", "raa-icons";
+  content: "\e948";
   transition: all 0.2s;
   font-size: 1.25rem;
-  color: #008578; }
+  color: #008578;
+}
 
-[id^='raa-radiobutton'] {
-  display: none !important; }
+[id^=raa-radiobutton] {
+  display: none !important;
+}
 
-[for^='raa-radiobutton']:before {
-  font-family: 'Source Sans Pro', 'raa-icons';
-  content: '\e941';
+[for^=raa-radiobutton]:before {
+  font-family: "Source Sans Pro", "raa-icons";
+  content: "\e941";
   position: relative;
   top: 0.2rem;
   margin-right: 0.5rem;
   font-size: 1.25rem;
   color: #3a3a3a;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
-[type='radio']:checked + [for^='raa-radiobutton']:before {
-  font-family: 'Source Sans Pro', 'raa-icons';
-  content: '\e940';
+[type=radio]:checked + [for^=raa-radiobutton]:before {
+  font-family: "Source Sans Pro", "raa-icons";
+  content: "\e940";
   transition: all 0.2s;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
-input[type='radio'] {
+input[type=radio] {
   display: table-cell;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 select {
   appearance: none;
-  background: transparent url("/assets/images/arrow.png") no-repeat calc(100% - 1rem) center; }
+  background: transparent url("/assets/images/arrow.png") no-repeat calc(100% - 1rem) center;
+}

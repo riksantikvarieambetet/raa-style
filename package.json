@@ -7,19 +7,18 @@
     "registry": "https://artifactory.raa.se/artifactory/api/npm/common-npm-prod/"
   },
   "scripts": {
-    "start": "npm run build && node-sass -w src --output dist/css",
     "clean": "rm -Rf dist",
     "build": "npm run tailwind && npm run build:copy-assets && npm run build:css && npm run build:copy-scss && npm run build:list-icons && npm run build:copy-tailwind-config",
     "build:copy-tailwind-config": "cp ./tailwind.config.js dist/",
-    "build:css": "node-sass src --output dist/css",
+    "build:css": "sass src:dist/css --no-source-map",
     "build:copy-scss": "mkdirp dist/scss && cp -r src/* dist/scss",
     "build:list-icons": "node list-icons.js",
     "build:copy-assets": "mkdirp dist && cp -r assets dist/",
     "tailwind": "yarn tailwind:core && yarn tailwind:button && yarn tailwind:typography && yarn tailwind:input",
-    "tailwind:core": "postcss ./tailwind-build.css -o ./src/raa-tailwind.scss",
+    "tailwind:core": "postcss ./tailwind-build.css -o ./src/raa-tailwind.scss --no-map",
     "tailwind:button": "postcss ./tailwind-build.button.css -o ./src/raa-tailwind.button.scss",
     "tailwind:typography": "postcss ./tailwind-build.typography.css -o ./src/raa-tailwind.typography.scss",
-    "tailwind:input": "postcss ./tailwind-build.input.css -o ./src/raa-tailwind.input.scss",
+    "tailwind:input": "postcss ./tailwind-build.input.css -o ./src/raa-tailwind.input.scss --no-map",
     "publish:patch": "node publishNewVersion --patch",
     "publish:minor": "node publishNewVersion --minor",
     "publish:major": "node publishNewVersion --major",
@@ -36,14 +35,20 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "dart-sass": "^1.25.0",
     "husky": "^7.0.2",
     "mkdirp": "^1.0.4",
-    "node-sass": "^6.0.1",
+    "postcss": "^8.4.5",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
     "prettier": "^2.4.0",
     "pretty-quick": "^3.1.1",
-    "tailwindcss": "^2.2.15"
+    "sass": "^1.45.2",
+    "tailwindcss": "^3.0.8"
+  },
+  "peerDependencies": {
+    "@fontsource/source-sans-pro": "^4.5.1"
   },
   "private": false
 }

@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   prefix: 'tw-',
   important: false,
+  content: ['./src/**/*.{js,jsx,ts,tsx,html}'],
   separator: ':',
   future: {
     removeDeprecatedGapUtilities: true,
@@ -87,11 +88,6 @@ module.exports = {
       DEFAULT: '2px',
       full: '9999px',
     },
-    borderWidth: {
-      DEFAULT: '1px',
-      0: '0',
-      2: '2px',
-    },
     boxShadow: {
       DEFAULT: '0 2px 4px 0 rgba(0,0,0,0.10)',
       md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
@@ -115,6 +111,8 @@ module.exports = {
     },
     flex: {
       1: '1 1 0%',
+      2: '2 2 0%',
+      3: '3 3 0%',
       auto: '1 1 auto',
       initial: '0 1 auto',
       none: 'none',
@@ -285,7 +283,6 @@ module.exports = {
       11: '11',
       12: '12',
     },
-    padding: (theme) => theme('spacing'),
     placeholderColor: (theme) => theme('colors'),
     stroke: {
       current: 'currentColor',
