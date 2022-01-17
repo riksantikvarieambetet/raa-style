@@ -10,7 +10,7 @@ Raa-style har en tailwind-configurationsfil som varje projekt skall utgå ifrån
 
 - Installera tailwindcss
 - Kör kommandot `npx tailwindcss init` för att skapa en ny konfigurationsfil.
-- Ändra konfigurationsfilen innehåll till att peka mot raa-styles tailwind-konfiguration på detta sätt:
+- Ändra konfigurationsfilens innehåll till att peka mot raa-styles tailwind-konfiguration på detta sätt:
 
 ```
 const raaTailwindConfig = require('raa-style/tailwind.config');
@@ -24,7 +24,7 @@ module.exports = {
 };
 ```
 
-Behöver man projektspecifika tailwindklasser behöver man spreada in raa-style theme och lägga till det man behöver efter.
+Behöver man projektspecifika tailwindklasser måste man spreada in raa-style theme och lägga till det man behöver efter.
 
 Ex.
 
@@ -38,9 +38,9 @@ theme: {
 ```
 
 ####Obs! Används raa-angular också, se nedan:
-Då Tailwind nuförtiden använder Just In Time-kompilering behöver path:en för raa-angular tas med i tailwind-konfigurationen.
-Annars kommer inte klasserna för dessa att genereras.
-Lägg till `'./node_modules/raa-angular/**/*.*'` i content i tailwind.config.js i ditt projekt baserat på din path till node_modules.
+Då Tailwind använder Just In Time-kompilering behöver path:en för raa-angular tas med i tailwind-konfigurationen för att få dessa klasser genererade.
+
+`content: ['./src/**/*.html', './node_modules/raa-angular/**/*.*']`
 
 För att använda raa-style:s SASS filer i andra projekt måste path:en för ikons-fonten sättas upp rätt. Innan raa-styles icons.scss importeras måste variabeln raa-style-font-path defineras enligt
 
