@@ -94,14 +94,3 @@
   font-style: normal;
   font-display: swap;
 }
-body {
-  font-size: 16px;
-  font-weight: normal;
-  color: #3a3a3a;
-  letter-spacing: normal;
-}
-
-* {
-  box-sizing: inherit;
-  font-family: "Source Sans Pro", sans-serif;
-}
