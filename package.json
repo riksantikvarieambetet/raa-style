@@ -1,6 +1,6 @@
 {
   "name": "raa-style",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "Sass och CSS-bibliotek för Riksantikvarieämbetet. Demo finns på https://app.raa.se/styleguide/.",
   "main": "",
   "publishConfig": {
