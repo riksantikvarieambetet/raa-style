@@ -11,6 +11,7 @@
 
 .raa-link:hover {
   @apply tw-underline tw-text-raa-orange-hover tw-bg-transparent;
+  text-decoration: underline;
 }
 
 .raa-link:active {
