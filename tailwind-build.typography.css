@@ -10,7 +10,7 @@
 }
 
 .raa-link:hover {
-  @apply tw-underline tw-text-raa-orange-hover tw-bg-transparent;
+  @apply tw-underline tw-text-raa-orange-hover tw-bg-transparent tw-decoration-raa-orange;
 }
 
 .raa-link:active {

@@ -25,6 +25,7 @@
   --tw-text-opacity: 1;
   color: rgb(181 66 22/var(--tw-text-opacity));
   text-decoration-line: underline;
+  text-decoration-color: #C94A18;
 }
 
 .raa-link:active {
