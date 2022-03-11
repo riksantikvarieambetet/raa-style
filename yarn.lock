@@ -980,21 +980,21 @@ postcss-value-parser@^4.2.0:
   resolved "https://artifactory.raa.se:443/artifactory/api/npm/raa-npm-prod/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha1-cjwJkgg2um0+WvAZ+SvAlxwC5RQ=
 
-postcss@8.4.8:
-  version "8.4.8"
-  resolved "https://artifactory.raa.se/artifactory/api/npm/raa-npm-prod/postcss/-/postcss-8.4.8.tgz#dad963a76e82c081a0657d3a2f3602ce10c2e032"
-  integrity sha1-2tljp26CwIGgZX06LzYCzhDC4DI=
-  dependencies:
-    nanoid "^3.3.1"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
 postcss@^8.4.6:
   version "8.4.6"
   resolved "https://artifactory.raa.se/artifactory/api/npm/raa-npm-prod/postcss/-/postcss-8.4.6.tgz#c5ff3c3c457a23864f32cb45ac9b741498a09ae1"
   integrity sha1-xf88PEV6I4ZPMstFrJt0FJigmuE=
   dependencies:
     nanoid "^3.2.0"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
+postcss@^8.4.8:
+  version "8.4.8"
+  resolved "https://artifactory.raa.se/artifactory/api/npm/raa-npm-prod/postcss/-/postcss-8.4.8.tgz#dad963a76e82c081a0657d3a2f3602ce10c2e032"
+  integrity sha1-2tljp26CwIGgZX06LzYCzhDC4DI=
+  dependencies:
+    nanoid "^3.3.1"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
@@ -1095,7 +1095,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-sass@1.49.9:
+sass@^1.49.9:
   version "1.49.9"
   resolved "https://artifactory.raa.se/artifactory/api/npm/raa-npm-prod/sass/-/sass-1.49.9.tgz#b15a189ecb0ca9e24634bae5d1ebc191809712f9"
   integrity sha1-sVoYnssMqeJGNLrl0evBkYCXEvk=
