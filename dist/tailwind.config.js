@@ -10,6 +10,13 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   theme: {
+    extend: {
+      borderRadius: {
+        none: '0',
+        DEFAULT: '2px',
+        full: '9999px',
+      },
+    },
     screens: {
       md: '570px',
       lg: '1025px',
@@ -83,11 +90,6 @@ module.exports = {
       ...theme('colors'),
       DEFAULT: theme('colors.raa-gray-6', 'currentColor'),
     }),
-    borderRadius: {
-      none: '0',
-      DEFAULT: '2px',
-      full: '9999px',
-    },
     boxShadow: {
       DEFAULT: '0 2px 4px 0 rgba(0,0,0,0.10)',
       md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
