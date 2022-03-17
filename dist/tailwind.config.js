@@ -10,13 +10,6 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   theme: {
-    extend: {
-      borderRadius: {
-        none: '0',
-        DEFAULT: '2px',
-        full: '9999px',
-      },
-    },
     screens: {
       md: '570px',
       lg: '1025px',
